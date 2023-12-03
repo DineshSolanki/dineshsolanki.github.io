@@ -7,7 +7,7 @@ logo:
 author: Dinesh Solanki
 description: Programmer's Mind, Writer's Heart
 email: solankid297@gmail.com
-phone: +91 0000 000 000
+#phone: +91 0000 000 000
 address: INDIA
 copyright: Copyright &copy; 2023
 
@@ -61,7 +61,7 @@ blurb-btn-name: know more
 # Work Process Section
 work-process:
   - title: "DrySign"
-    icon: "https://drysign.exelatech.com/sites/default/files/DrySign-logo-black.png"
+    icon: "assets/images/icons/DrySign-logo-black.png"
     content: "
     Developed backend features in Java and Angular frontend
     Led feature development and task delegation to meet deadlines
@@ -70,7 +70,7 @@ work-process:
 "
 
   - title: "Exela Remote Notarization"
-    icon: "https://rn.exelatech.com/sites/default/files/custom-logo/ERN-logo-blue-white.png"
+    icon: "assets/images/icons/ERN-logo-blue-white.png"
     content: "Exela RN is a web portal that facilitates connecting signatories to credentialed notaries in order to schedule and record successful notary sessions within a secure online environment, enabling customers to get a document notarized online using any kind of connected device. Notaries will be provided with an electronic notary journal and recording vault from which they can retrieve their sessions, as well as easy to use scheduling tools, calendars to customize availability, and an account dashboard to track payments and appointments."
 
   - title: "FoliCon"
@@ -175,10 +175,10 @@ portfolio-home-items:
   - image: "assets/images/portfolio/nullnotion.png"
     url: "https://plugins.jetbrains.com/plugin/20902-nullnotion"
 
-  - image: "https://drysign.exelatech.com/sites/default/files/DrySign-logo-black.png"
+  - image: "assets/images/icons/DrySign-logo-black.png"
     url: "https://drysign.exelatech.com/"
 
-  - image: "https://rn.exelatech.com/sites/default/files/custom-logo/ERN-logo-blue-white.png"
+  - image: "assets/images/icons/ERN-logo-blue-white.png"
     url: "https://rn.exelatech.com"
 
   - image: "assets/images/portfolio/samay.png"

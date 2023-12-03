@@ -1,18 +1,15 @@
 ---
 layout: about
 title: About Me
-author: Johnathan Smith
+author: Dinesh Solanki
 image: assets/images/about/author.jpg
-signature: assets/images/about/signature.png
+#signature: assets/images/about/signature.png
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat.
+Hi, I'm Dinesh Solanki, a software engineer from India. I am a technology enthusiast and love to explore new technologies. I have a passion for learning new things and sharing my knowledge with others.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident.
+When I am not coding, I like to spend my writing stories, prose, or poems, and watching movies,
 
-Deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.
+You can also find me gaming or writing blogs on [Aprogrammers](https://aprogrammers.wordpress.com/).
+
+## Writer's heart, Programmer's mind, and Gamer's soul.
