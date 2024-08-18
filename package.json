@@ -2,11 +2,11 @@
   "private": true,
   "name": "masterPortfolio",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "https://dineshsolanki.github.io",
   "scripts": {
-    "build": "react-scripts --openssl-legacy-provider build",
+    "build": "react-scripts --openssl-legacy-provider docs",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages -d build",
+    "deploy": "gh-pages -b gh-pages -d docs",
     "eject": "react-scripts eject",
     "start": "react-scripts --openssl-legacy-provider start",
     "test": "react-scripts test"
