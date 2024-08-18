@@ -352,7 +352,7 @@ const degrees = {
       alt_name: "Lachoo Memorial College of Science & Technology",
       duration: "2015 - 2018",
       descriptions: [
-        "⚡ Apart form core subjects, I have been part of College's literature activities.",
+        "⚡ Apart from core subjects, I have been part of College's literature activities.",
         "⚡ Volunteer of Training and Placement Cell.",
       ],
       website_link: "https://www.lachoomemorial.org",
@@ -478,8 +478,8 @@ const experience = {
   title: "Experience",
   subtitle: "Work",
   description:
-    "I started my professional career with Java, and since then I've been doing development in the Java tech stack and the surrounding eco-system," +
-    " I am also involved with many opensource communities.",
+    "I started my professional career with Java and have been continuously developing in the Java tech stack and its surrounding ecosystem. " +
+      "I am also actively involved with many open-source communities.",
   header_image_path: "experience.svg",
   sections: [
     {
