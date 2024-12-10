@@ -45,7 +45,7 @@ const socialMediaLinks = [
     fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
     backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
   },
-/*  {
+  /*  {
     name: "YouTube",
     link: "https://youtube.com/c/-",
     fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
@@ -163,7 +163,7 @@ const skills = {
             backgroundColor: "white",
             color: "#FF7200",
           },
-        }
+        },
       ],
     },
     {
@@ -197,7 +197,7 @@ const skills = {
             color: "#0089D6",
           },
         },
-/*        {
+        /*        {
           skillName: "Firebase",
           fontAwesomeClassname: "simple-icons:firebase",
           style: {
@@ -233,8 +233,8 @@ const skills = {
           },
         },
       ],
-    }
-/*    {
+    },
+    /*    {
       title: "UI/UX Design",
       fileName: "DesignImg",
       skills: [
@@ -279,7 +279,7 @@ const skills = {
 // Education Page
 const competitiveSites = {
   competitiveSites: [
-   /* {
+    /* {
       siteName: "LeetCode",
       iconifyClassname: "simple-icons:leetcode",
       style: {
@@ -479,11 +479,39 @@ const experience = {
   subtitle: "Work",
   description:
     "I started my professional career with Java and have been continuously developing in the Java tech stack and its surrounding ecosystem. " +
-      "I am also actively involved with many open-source communities.",
+    "I am also actively involved with many open-source communities.",
   header_image_path: "experience.svg",
   sections: [
     {
-      title: "Work",
+      title: `Ness Digital Engineering (${getTimePeriod(
+        "2024-10-17",
+        Date.now()
+      )})`,
+      work: true,
+      experiences: [
+        {
+          title: "Senior Software Engineer",
+          company: "Ness Digital Engineering",
+          company_url: "https://www.ness.com/",
+          logo_path: "ness-logo.png",
+          duration: "Oct 2024 - Present",
+          location: "Pune, Maharashtra, India",
+          description:
+            "\n● Working closely in SCM projects" +
+            "\n● Leading Java microservices creation and features" +
+            "\n● Building NoCode platform in angular with java" +
+            "\n● Mentoring technical upskill within team" +
+            "\n● Working in agile environment " +
+            "\n● Documented various process and automated tasks.",
+          color: "#000000",
+        },
+      ],
+    },
+    {
+      title: `Exela Technologies (${getTimePeriod(
+        "2021-11-01",
+        "2024-07-31"
+      )})`,
       work: true,
       experiences: [
         {
@@ -503,7 +531,7 @@ const experience = {
             "\n● Lead team of up to 6 developers for critical refactoring and API security overhaul" +
             "\n● Documented various process and automated tasks.",
           color: "#000000",
-        }
+        },
       ],
     },
     /*{
@@ -627,38 +655,51 @@ const publications = {
   data: [
     {
       id: "github-shields",
-      name: "Shields/Badges and your repositories, Beginners’ guide to GitHub Shields.",
+      name:
+        "Shields/Badges and your repositories, Beginners’ guide to GitHub Shields.",
       createdAt: "2020-10-18T00:00:00Z",
-      description: "Badges, also known as shields, are a great way to quickly showcase information about your repository. They can be found on the top of my project FoliCon’s Readme. In this post, we’ll learn how to use them to make your Readme’s look more professional.",
-      url: "https://dineshsolanki.medium.com/shields-badges-and-your-repositories-beginners-guide-to-github-shields-84f9c4452f7e?source=portfolio",
+      description:
+        "Badges, also known as shields, are a great way to quickly showcase information about your repository. They can be found on the top of my project FoliCon’s Readme. In this post, we’ll learn how to use them to make your Readme’s look more professional.",
+      url:
+        "https://dineshsolanki.medium.com/shields-badges-and-your-repositories-beginners-guide-to-github-shields-84f9c4452f7e?source=portfolio",
     },
     {
       id: "java-graal-vm",
-      name: "Create Self-Contained Executables: Java Programs to native executables with GraalVM",
+      name:
+        "Create Self-Contained Executables: Java Programs to native executables with GraalVM",
       createdAt: "2024-05-24T00:00:00Z",
-      description: "Are you tired of hearing native is better? Say hello to GraalVM! This powerhouse tool converts your Java program into a self-contained executable, ensuring a seamless experience for all. With simple steps like setting environment variables and using Maven, you'll be up and running in no time.",
-      url: "https://aprogrammers.wordpress.com/2024/05/24/how-to-create-self-contained-executables-convert-java-programs-with-graalvm/",
+      description:
+        "Are you tired of hearing native is better? Say hello to GraalVM! This powerhouse tool converts your Java program into a self-contained executable, ensuring a seamless experience for all. With simple steps like setting environment variables and using Maven, you'll be up and running in no time.",
+      url:
+        "https://aprogrammers.wordpress.com/2024/05/24/how-to-create-self-contained-executables-convert-java-programs-with-graalvm/",
     },
     {
       id: "Single-Entity-with-mongo-JPA",
       name: "Using Single Entity with JPA and Mongo DB in spring-boot",
       createdAt: "2024-01-25T00:00:00Z",
-      description: "When dealing with data split across SQL and NoSQL, it's tricky to handle a single entity. While not ideal, use a combination of JPA and starter-data-mongo, carefully managing dependencies and creating different profiles. With careful entity and repository design, it's possible to make them work. Remember to separate repositories and handle case-sensitive fields. This approach offers an effective way to handle the situation.",
-      url: "https://aprogrammers.wordpress.com/2024/01/25/using-single-entity-with-jpa-and-mongo-db-in-spring-boot/",
+      description:
+        "When dealing with data split across SQL and NoSQL, it's tricky to handle a single entity. While not ideal, use a combination of JPA and starter-data-mongo, carefully managing dependencies and creating different profiles. With careful entity and repository design, it's possible to make them work. Remember to separate repositories and handle case-sensitive fields. This approach offers an effective way to handle the situation.",
+      url:
+        "https://aprogrammers.wordpress.com/2024/01/25/using-single-entity-with-jpa-and-mongo-db-in-spring-boot/",
     },
     {
       id: "keycloak-multi-tenancy",
-      name: "How to validate keycloak token when you have multiple realms(Multi-tenancy)",
+      name:
+        "How to validate keycloak token when you have multiple realms(Multi-tenancy)",
       createdAt: "2023-09-17T00:00:00Z",
-      description: "Validating JWT tokens provided by Keycloak in a Spring Boot application with multiple realms can be challenging. This blog post will provide a step-by-step guide on how to implement a custom JWT decoder that can handle multiple realms.",
-      url: "https://aprogrammers.wordpress.com/2023/09/17/how-to-validate-keycloak-token-when-you-have-multiple-realmsmulti-tenancy/",
+      description:
+        "Validating JWT tokens provided by Keycloak in a Spring Boot application with multiple realms can be challenging. This blog post will provide a step-by-step guide on how to implement a custom JWT decoder that can handle multiple realms.",
+      url:
+        "https://aprogrammers.wordpress.com/2023/09/17/how-to-validate-keycloak-token-when-you-have-multiple-realmsmulti-tenancy/",
     },
     {
       id: "java-logs-retrieval",
       name: "Programmatically Retrieving Log Files in Java Spring Boot",
       createdAt: "2023-11-20T00:00:00Z",
-      description: "In any Java application, having access to log files is crucial for debugging issues, monitoring app performance, and understanding usage patterns. In this post, we'll explore different techniques for programmatically retrieving log files in Java for administrative purposes or log analysis. Getting the Log File Location First, we need to determine where the log files",
-      url: "https://aprogrammers.wordpress.com/2023/11/20/programmatically-retrieving-log-files-in-java/",
+      description:
+        "In any Java application, having access to log files is crucial for debugging issues, monitoring app performance, and understanding usage patterns. In this post, we'll explore different techniques for programmatically retrieving log files in Java for administrative purposes or log analysis. Getting the Log File Location First, we need to determine where the log files",
+      url:
+        "https://aprogrammers.wordpress.com/2023/11/20/programmatically-retrieving-log-files-in-java/",
     },
   ],
 };
@@ -694,6 +735,25 @@ const contactPageData = {
     subtitle: "",
   },
 };
+
+function getTimePeriod(startDate, endDate) {
+  const start = new Date(startDate);
+  const end = new Date(endDate);
+
+  let years = end.getFullYear() - start.getFullYear();
+  let months = end.getMonth() - start.getMonth();
+
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
+  if (years === 0) {
+    return `${months} months`;
+  } else if (months === 0) {
+    return `${years} years`;
+  }
+  return `${years} years ${months} months`;
+}
 
 export {
   settings,
