@@ -233,6 +233,19 @@ const skills = {
       ],
       softwareSkills: [],
     },
+    {
+      title: "Technical Skills",
+      fileName: "TechSkillsImg",
+      skills: [
+        "⚡ Languages & Frameworks: Java, Spring Boot, Angular, Maven, Gradle, Spring Shell, JSLT, XSLT",
+        "⚡ Security: Spring Security, Keycloak, OWASP, PCI Compliance, SAST/DAST, Veracode, Blackduck, Coverity",
+        "⚡ Cloud & DevOps: Azure, AWS, Docker, Kubernetes, Jenkins, Git, Azure DevOps, Tuleap",
+        "⚡ Standards & Protocols: GS1, EPCIS, DSCSA, REST APIs, OpenAPI",
+        "⚡ Databases & Tools: SQL, MongoDB, Subversion, Jira, IntelliJ, VSCode, Eclipse, Visual Studio",
+        "⚡ Others: Microservices, Authentication & Authorization, Secure Coding Practices",
+      ],
+      softwareSkills: [],
+    },
   ],
 };
 
@@ -300,8 +313,8 @@ const degrees = {
       duration: "2018 - 2021",
       descriptions: [
         "⚡ I have studied core software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
-        "⚡ Apart from this, I have been involved in many college events and activities.",
-        "⚡ I was also part of college's technical club and contributed to many opensource projects.",
+        "⚡ GPA - 8.7",
+        "⚡ Coding club mentor; contributed to online tests development and college events.",
       ],
       website_link: "https://www.mbm.ac.in",
     },
@@ -312,8 +325,8 @@ const degrees = {
       alt_name: "Lachoo Memorial College of Science & Technology",
       duration: "2015 - 2018",
       descriptions: [
-        "⚡ Apart from core subjects, I have been part of College's literature activities.",
-        "⚡ Volunteer of Training and Placement Cell.",
+        "⚡ GPA - 7.1",
+        "⚡ TPO cell volunteer and active in college activities.",
       ],
       website_link: "https://www.lachoomemorial.org",
     },
@@ -333,7 +346,7 @@ const certifications = {
     {
       title: "EF SET English Certificate - 77/100",
       subtitle: "C2 Proficient",
-      logo_path: "efset_logo.png",
+      logo_path: "efset_logo.svg",
       certificate_link: "",
       alt_name: "EF SET",
       color_code: "#0C9D58",
@@ -347,20 +360,22 @@ const certifications = {
       color_code: "#000000",
     },
     {
-      title: "Spot Award 2025",
-      subtitle: "Honors & Awards",
-      logo_path: "award.png",
-      certificate_link: "",
-      alt_name: "Spot Award",
-      color_code: "#FFD700",
-    },
-    {
-      title: "Ness Quarterly Award - Innovation",
-      subtitle: "Honors & Awards",
+      title: "Ness Quarterly Award",
+      subtitle: "Ness Digital Engineering — 2025",
       logo_path: "ness-logo.png",
-      certificate_link: "",
+      certificate_link:
+        "https://drive.google.com/file/d/1hCJr71efiom_YKtLCpMfuATU0ptz_orY/view?usp=sharing",
       alt_name: "Ness Digital Engineering",
       color_code: "#000000",
+    },
+    {
+      title: "Ness Spot Award",
+      subtitle: "Ness Digital Engineering — 2025",
+      logo_path: "award.png",
+      certificate_link:
+        "https://drive.google.com/file/d/1Ol6UZS21bp0rJaglY4UqWb6Z2rpJiltL/view?usp=sharing",
+      alt_name: "Spot Award",
+      color_code: "#FFD700",
     },
   ],
 };
@@ -370,8 +385,7 @@ const experience = {
   title: "Experience",
   subtitle: "Work",
   description:
-    "I started my professional career with Java and have been continuously developing in the Java tech stack and its surrounding ecosystem. " +
-    "I am also actively involved with many open-source communities.",
+    "I started my professional career with Java and have been continuously developing in the Java tech stack and its surrounding ecosystem. I am also actively involved with many open-source communities.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -382,19 +396,19 @@ const experience = {
       work: true,
       experiences: [
         {
-          title: "Senior Engineer",
+          title: "Senior Engineer (Java backend heavy)",
           company: "Ness Digital Engineering",
           company_url: "https://www.ness.com/",
           logo_path: "ness-logo.png",
           duration: "Oct 2024 - Present",
           location: "Pune, Maharashtra, India",
           description:
-            "\n● Working closely in SCM projects" +
-            "\n● Leading Java microservices creation and features" +
-            "\n● Building NoCode platform in angular with java" +
-            "\n● Mentoring technical upskill within team" +
-            "\n● Working in agile environment " +
-            "\n● Documented various process and automated tasks.",
+            "\n● Working in Healthcare SCM project (GS1 / EPCIS)." +
+            "\n● Microservices, authentication, JSON-heavy APIs and Keycloak-based IAM integrations." +
+            "\n● Achieved 100% Jira board stability since joining the sprint." +
+            "\n● Promoted clean coding best practices through code reviews and mentoring of new team members." +
+            "\n● Delivered client demos and drove innovation recognized with quarterly and spot awards (Innovation Catalyst)." +
+            "\n● Developed utilities to handle lengthy tasks and integrated SAST/DAST tooling (Blackduck, Coverity).",
           color: "#000000",
         },
       ],
@@ -414,14 +428,12 @@ const experience = {
           duration: "Nov 2021 - July 2024",
           location: "Pune, Maharashtra, India (Remote)",
           description:
-            "\n● Developed new features enabling key product (DrySign and ERN) to reach milestone release." +
-            "\n● Enhanced application security strengthening controls around access, input validation, rate limiting etc. - raised score from 25 to 100 on OWASP standards" +
-            "\n● Achieved PCI compliance" +
-            "\n● Promoted clean coding best practices through code reviews and mentoring of new team members" +
-            "\n● Communicating with end-users in case of product issue" +
-            "\n● Developed replacements for legacy services" +
-            "\n● Lead team of up to 6 developers for critical refactoring and API security overhaul" +
-            "\n● Documented various process and automated tasks.",
+            "\n● Developed new features enabling key products (DrySign and ERN) to reach milestone release." +
+            "\n● Enhanced application security strengthening controls around access, input validation, rate limiting etc. — raised score from 25 to 100 on OWASP standards." +
+            "\n● Achieved PCI compliance." +
+            "\n● Promoted clean coding best practices through code reviews and mentoring of new team members." +
+            "\n● Developed replacements for legacy services and led refactoring efforts (led teams of up to 6 developers)." +
+            "\n● Documented processes and automated tasks.",
           color: "#000000",
         },
       ],
