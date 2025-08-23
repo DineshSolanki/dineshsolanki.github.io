@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    revision: "82276e6f5c658787a0d75fdd75fd5bd0",
+    revision: "470207cd636fff0a95ed2071a6adac5a",
     url: "/index.html",
   },
   {
-    revision: "afbbc74e10e894f44bc1",
+    revision: "f90dacad99540011f236",
     url: "/static/css/main.37f7feb6.chunk.css",
   },
   {
-    revision: "c1c42242cd6a7e602c49",
-    url: "/static/js/2.3baa2074.chunk.js",
+    revision: "0da126ba287018bc56be",
+    url: "/static/js/2.2daa2463.chunk.js",
   },
   {
-    revision: "afbbc74e10e894f44bc1",
-    url: "/static/js/main.1d750447.chunk.js",
+    revision: "f90dacad99540011f236",
+    url: "/static/js/main.e3efb2a9.chunk.js",
   },
   {
     revision: "f4163cc1361175add5e6",
@@ -60,6 +60,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     url: "/static/media/animated_logo.dcd6dee2.svg",
   },
   {
+    revision: "c506351219536ac795cb6269ebf0db4d",
+    url: "/static/media/award.c5063512.png",
+  },
+  {
     revision: "058eca4cbdc03a1dad9a6bb943ac7831",
     url: "/static/media/blogs_image.058eca4c.svg",
   },
@@ -94,6 +98,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     revision: "3bab7a9dc4324f1b2364d25a47fcfcf0",
     url: "/static/media/education.3bab7a9d.svg",
+  },
+  {
+    revision: "917b063ddc5a39d7a0ea4f9a17be713c",
+    url: "/static/media/efset_logo.917b063d.svg",
   },
   {
     revision: "a00ede3f70759480e81f14f203edaa51",
