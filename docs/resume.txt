@@ -1,0 +1,101 @@
+Dinesh Solanki
+http://linkedin.com/in/DineshSolanki
+
+Java Developer with 4 years of experience designing, developing, and maintaining Spring Boot applications. Expertise in crafting high-performance, scalable RESTful APIs and integrating authentication/authorization mechanisms like Spring Security and Keycloak. Leverage cloud services (Azure) for robust deployments. Strong problem-solving skills and passion for writing clean, maintainable code. Adept at quickly learning new technologies to meet evolving needs. Seeking challenging roles to further enhance enterprise-grade Spring Boot development skills while collaborating with talented teams. Experience of best of both product and client based organizations.
+
+EXPERIENCE
+Senior engineer (Java backend heavy)	Oct  2024 – Present
+Ness Digital Engineering, Pune
+Ness Digital Engineering, is a full-lifecycle digital engineering firm offering digital advisory through scaled engineering services. Headquartered in New York.
+
+Role achievements -
+●	Working in Healthcare SCM project.
+●	Microservices, authentication, JSON heavy structure
+●	Achieved 100% Jira board stability since sprint joining.
+●	Promoted clean coding best practices through code reviews and mentoring of new team members
+●	Delivered client demos and drove innovation recognized with quarterly and spot awards (Innovation Catalyst).
+●	Developed Utilities for dealing with lengthy tasks.
+●	Quarterly and spot award winner
+●	Leading technical innovation, awarded innovation catalyst
+●	Blackduck Coverity solutions
+●	Deep insights and working knowledge on GS1 Track n Trace
+
+Java backend engineer	Nov 2021 – July 2024
+Exela Technologies, Pune
+Exela is a business process automation leader, leveraging a global footprint and proprietary
+technology to streamline complex, disconnected transactions and processes. By
+connecting data through user friendly software platforms and solutions.
+
+Role achievements -
+●	Developed new features enabling key products (DrySign and ERN) to reach milestone release.
+●	Enhanced application security strengthening controls around access, input validation, rate limiting etc. - raised score from 25 to 100 on OWASP standards
+●	Achieved PCI compliance
+●	Promoted clean coding best practices through code reviews and mentoring of new team members
+●	Communicating with end-users in case of product issue
+●	Developed replacements for legacy services
+●	Lead team of up to 6 developers for critical refactoring and API security overhaul
+●	Documented various processes and automated tasks.
+
+EDUCATION
+Master of computer Applications - Computer Science	Aug 2018 - Dec 2021
+MBM engineering college
+GPA - 8.7
+Coding club mentor
+Online Tests development
+
+
+Bachelor of Computer Applications - Computer Science	2015 - 2018
+Lachoo Memorial College of Science & Technology
+GPA - 7.1
+TPO cell volunteer
+
+Technical Skills
+●	Languages & Frameworks: Java, Spring Boot, Angular, Maven, Gradle, Spring Shell, JSLT and XSLT
+
+●	Security: Spring Security, Keycloak, OWASP, PCI Compliance, SAST/DAST, Veracode, Blackduck, Coverity
+
+●	Cloud & DevOps: Azure, AWS, Docker, Kubernetes, Jenkins, Git, Azure DevOps, Tuleap
+
+●	Standards & Protocols: GS1, EPCIS, DSCSA, REST APIs, OpenAPI
+
+●	Databases & Tools: SQL, MongoDB, Subversion, Jira, Intellij, STS, VSCODE, Eclipse, Visual Studio, Agile, Jira, Tuleap, Azure board
+
+●	Others: Microservices, Authentication & Authorization, Secure Coding Practices
+
+Certifications & Awards
+Ness Quarterly Award	2025
+Ness Digital Engineering
+
+Ness Spot Award	2025
+Ness Digital Engineering
+
+Exela Extra Miles Award	2023
+Exela Technologies
+
+Foundational C# with Microsoft	2023
+Microsoft
+
+
+
+Open Source & Community Contributions
+
+●	FoliCon	●	NullNotion Intellij Plugin
+●	Samay (Maven library)	●	TMDBLib
+●	Keycloak
+●	Intellij Platforms	●	SharpCompress
+●	JSLT
+
+
+VOLUNTEER
+Technical event coordinator	2020 - 2021
+MBM engineering college
+
+Coding Club mentor	2019 - 2021
+MBM engineering college
+
+Technical Event volunteer	2019 - 2019
+MBM Engineering college
+
+TPO volunteer	2017 - 2018
+Lachoo Memorial College of Science & Technology
+
