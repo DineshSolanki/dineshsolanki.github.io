@@ -20,6 +20,10 @@
   margin-top: 20px;
 }
 
+.award-card-link {
+  text-decoration: none;
+}
+
 .award-card {
   display: flex;
   align-items: center;

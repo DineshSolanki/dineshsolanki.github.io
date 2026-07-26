@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "240c2b9991e8f5fae676adaf49b02b33",
+    "revision": "b99aeb211e625b3b41976508a2c59fff",
     "url": "/index.html"
   },
   {
-    "revision": "f9d0f665882df6000ad0",
-    "url": "/static/css/main.53005d44.chunk.css"
+    "revision": "c4092557c2e73256b22f",
+    "url": "/static/css/main.d66f92ae.chunk.css"
   },
   {
-    "revision": "a1aeeeffc87de8638175",
-    "url": "/static/js/2.290011e2.chunk.js"
+    "revision": "4917c5985bf5ea531c52",
+    "url": "/static/js/2.8eea141b.chunk.js"
   },
   {
-    "revision": "f9d0f665882df6000ad0",
-    "url": "/static/js/main.a268a720.chunk.js"
+    "revision": "c4092557c2e73256b22f",
+    "url": "/static/js/main.f20eacef.chunk.js"
   },
   {
     "revision": "f4163cc1361175add5e6",
@@ -60,6 +60,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/animated_logo.dcd6dee2.svg"
   },
   {
+    "revision": "0ce242d2733bb292413f8e715046bbc8",
+    "url": "/static/media/award.0ce242d2.png"
+  },
+  {
     "revision": "058eca4cbdc03a1dad9a6bb943ac7831",
     "url": "/static/media/blogs_image.058eca4c.svg"
   },
@@ -94,6 +98,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3bab7a9dc4324f1b2364d25a47fcfcf0",
     "url": "/static/media/education.3bab7a9d.svg"
+  },
+  {
+    "revision": "917b063ddc5a39d7a0ea4f9a17be713c",
+    "url": "/static/media/efset_logo.917b063d.svg"
   },
   {
     "revision": "a00ede3f70759480e81f14f203edaa51",

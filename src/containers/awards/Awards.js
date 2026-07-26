@@ -16,8 +16,8 @@ class Awards extends Component {
           </Fade>
         </div>
         <div className="awards-body-div">
-          {awards.data.map((award) => (
-            <Fade bottom duration={1000} distance="20px" key={award.title + award.subtitle}>
+          {awards.data.map((award) => {
+            const card = (
               <div
                 className="award-card"
                 style={{ backgroundColor: theme.body }}
@@ -39,8 +39,30 @@ class Awards extends Component {
                   </h3>
                 </div>
               </div>
-            </Fade>
-          ))}
+            );
+            return (
+              <Fade
+                bottom
+                duration={1000}
+                distance="20px"
+                key={award.title + award.subtitle}
+              >
+                {award.certificate_link ? (
+                  <a
+                    className="award-card-link"
+                    href={award.certificate_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${award.title} — view certificate`}
+                  >
+                    {card}
+                  </a>
+                ) : (
+                  card
+                )}
+              </Fade>
+            );
+          })}
         </div>
       </div>
     );

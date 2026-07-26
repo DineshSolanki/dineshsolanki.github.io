@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.53005d44.chunk.css",
-    "main.js": "/static/js/main.a268a720.chunk.js",
-    "main.js.map": "/static/js/main.a268a720.chunk.js.map",
+    "main.css": "/static/css/main.d66f92ae.chunk.css",
+    "main.js": "/static/js/main.f20eacef.chunk.js",
+    "main.js.map": "/static/js/main.f20eacef.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2781e2dc.js",
     "runtime-main.js.map": "/static/js/runtime-main.2781e2dc.js.map",
-    "static/js/2.290011e2.chunk.js": "/static/js/2.290011e2.chunk.js",
-    "static/js/2.290011e2.chunk.js.map": "/static/js/2.290011e2.chunk.js.map",
+    "static/js/2.8eea141b.chunk.js": "/static/js/2.8eea141b.chunk.js",
+    "static/js/2.8eea141b.chunk.js.map": "/static/js/2.8eea141b.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.fdefd867fe1df3981b47191080a72ac4.js": "/precache-manifest.fdefd867fe1df3981b47191080a72ac4.js",
+    "precache-manifest.128407eb4bbe30a5fce28140ac3cbf59.js": "/precache-manifest.128407eb4bbe30a5fce28140ac3cbf59.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.53005d44.chunk.css.map": "/static/css/main.53005d44.chunk.css.map",
+    "static/css/main.d66f92ae.chunk.css.map": "/static/css/main.d66f92ae.chunk.css.map",
     "static/media/index.css": "/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/address_image.svg": "/static/media/address_image.16559172.svg",
     "static/media/animated_logo.svg": "/static/media/animated_logo.dcd6dee2.svg",
+    "static/media/award.png": "/static/media/award.0ce242d2.png",
     "static/media/blogs_image.svg": "/static/media/blogs_image.058eca4c.svg",
     "static/media/cloud_infrastructure.svg": "/static/media/cloud_infrastructure.cacbc42b.svg",
     "static/media/codeInLogo.png": "/static/media/codeInLogo.fee92c18.png",
@@ -23,6 +24,7 @@
     "static/media/developerActivity.svg": "/static/media/developerActivity.3e23ca14.svg",
     "static/media/dsc_logo.png": "/static/media/dsc_logo.63f707f2.png",
     "static/media/education.svg": "/static/media/education.3bab7a9d.svg",
+    "static/media/efset_logo.svg": "/static/media/efset_logo.917b063d.svg",
     "static/media/experience.svg": "/static/media/experience.a00ede3f.svg",
     "static/media/ey-logo.png": "/static/media/ey-logo.4dc02a09.png",
     "static/media/all.css": "/static/media/fa-solid-900.8e4a6dcc.eot",
@@ -57,8 +59,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2781e2dc.js",
-    "static/js/2.290011e2.chunk.js",
-    "static/css/main.53005d44.chunk.css",
-    "static/js/main.a268a720.chunk.js"
+    "static/js/2.8eea141b.chunk.js",
+    "static/css/main.d66f92ae.chunk.css",
+    "static/js/main.f20eacef.chunk.js"
   ]
 }

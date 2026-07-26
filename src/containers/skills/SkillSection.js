@@ -9,16 +9,24 @@ import CloudInfraImg from "./CloudInfraImg";
 import DesignImg from "./DesignImg";
 import SecurityImg from "./SecurityImg";
 
-function GetSkillSvg(props) {
-  if (props.fileName === "DataScienceImg")
-    return <DataScienceImg theme={props.theme} />;
-  else if (props.fileName === "FullStackImg")
-    return <FullStackImg theme={props.theme} />;
-  else if (props.fileName === "CloudInfraImg")
-    return <CloudInfraImg theme={props.theme} />;
-  else if (props.fileName === "SecurityImg")
-    return <SecurityImg theme={props.theme} />;
-  return <DesignImg theme={props.theme} />;
+// Returns null for sections with no fileName (e.g. the flat "Technical Skills"
+// keyword block), which then render full width instead of borrowing an
+// unrelated illustration.
+function getSkillSvg(fileName, theme) {
+  switch (fileName) {
+    case "DataScienceImg":
+      return <DataScienceImg theme={theme} />;
+    case "FullStackImg":
+      return <FullStackImg theme={theme} />;
+    case "CloudInfraImg":
+      return <CloudInfraImg theme={theme} />;
+    case "SecurityImg":
+      return <SecurityImg theme={theme} />;
+    case "DesignImg":
+      return <DesignImg theme={theme} />;
+    default:
+      return null;
+  }
 }
 
 class SkillSection extends Component {
@@ -26,18 +34,20 @@ class SkillSection extends Component {
     const theme = this.props.theme;
     return (
       <div>
-        {skills.data.map((skill, i) => {
+        {skills.data.map((skill) => {
+          const skillSvg = getSkillSvg(skill.fileName, theme);
           return (
-            <div key={i} className="skills-main-div">
-              <Fade left duration={2000}>
-                <div className="skills-image-div">
-                  {/* <img
-                    alt="Ashutosh is Analysing Data"
-                    src={require(`../../assets/images/${skill.imagePath}`)}
-                  ></img> */}
-                  <GetSkillSvg fileName={skill.fileName} theme={theme} />
-                </div>
-              </Fade>
+            <div
+              key={skill.title}
+              className={
+                skillSvg ? "skills-main-div" : "skills-main-div skills-no-image"
+              }
+            >
+              {skillSvg && (
+                <Fade left duration={1000}>
+                  <div className="skills-image-div">{skillSvg}</div>
+                </Fade>
+              )}
 
               <div className="skills-text-div">
                 <Fade right duration={1000}>
@@ -48,12 +58,12 @@ class SkillSection extends Component {
                 <Fade right duration={1500}>
                   <SoftwareSkill logos={skill.softwareSkills} />
                 </Fade>
-                <Fade right duration={2000}>
+                <Fade right duration={1500}>
                   <div>
-                    {skill.skills.map((skillSentence, i) => {
+                    {skill.skills.map((skillSentence) => {
                       return (
                         <p
-                          key={i}
+                          key={skillSentence}
                           className="subTitle skills-text"
                           style={{ color: theme.secondaryText }}
                         >
