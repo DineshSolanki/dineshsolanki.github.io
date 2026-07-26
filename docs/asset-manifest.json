@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.37f7feb6.chunk.css",
-    "main.js": "/static/js/main.716d5985.chunk.js",
-    "main.js.map": "/static/js/main.716d5985.chunk.js.map",
+    "main.css": "/static/css/main.53005d44.chunk.css",
+    "main.js": "/static/js/main.a268a720.chunk.js",
+    "main.js.map": "/static/js/main.a268a720.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2781e2dc.js",
     "runtime-main.js.map": "/static/js/runtime-main.2781e2dc.js.map",
-    "static/js/2.643b9762.chunk.js": "/static/js/2.643b9762.chunk.js",
-    "static/js/2.643b9762.chunk.js.map": "/static/js/2.643b9762.chunk.js.map",
+    "static/js/2.290011e2.chunk.js": "/static/js/2.290011e2.chunk.js",
+    "static/js/2.290011e2.chunk.js.map": "/static/js/2.290011e2.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.20da0ae4751300832431cc4429514daa.js": "/precache-manifest.20da0ae4751300832431cc4429514daa.js",
+    "precache-manifest.fdefd867fe1df3981b47191080a72ac4.js": "/precache-manifest.fdefd867fe1df3981b47191080a72ac4.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.37f7feb6.chunk.css.map": "/static/css/main.37f7feb6.chunk.css.map",
+    "static/css/main.53005d44.chunk.css.map": "/static/css/main.53005d44.chunk.css.map",
     "static/media/index.css": "/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/address_image.svg": "/static/media/address_image.16559172.svg",
     "static/media/animated_logo.svg": "/static/media/animated_logo.dcd6dee2.svg",
@@ -24,6 +24,7 @@
     "static/media/dsc_logo.png": "/static/media/dsc_logo.63f707f2.png",
     "static/media/education.svg": "/static/media/education.3bab7a9d.svg",
     "static/media/experience.svg": "/static/media/experience.a00ede3f.svg",
+    "static/media/ey-logo.png": "/static/media/ey-logo.4dc02a09.png",
     "static/media/all.css": "/static/media/fa-solid-900.8e4a6dcc.eot",
     "static/media/feelingProud.svg": "/static/media/feelingProud.2936ce95.svg",
     "static/media/fullstack.svg": "/static/media/fullstack.fce60807.svg",
@@ -41,6 +42,7 @@
     "static/media/manOnTable.svg": "/static/media/manOnTable.83ac24fb.svg",
     "static/media/mbmu-logo.png": "/static/media/mbmu-logo.7fcd91ff.png",
     "static/media/muffito_logo.png": "/static/media/muffito_logo.069938a8.png",
+    "static/media/ness-logo.png": "/static/media/ness-logo.1e83c311.png",
     "static/media/nptel_logo.png": "/static/media/nptel_logo.95a12a2b.png",
     "static/media/portfolio.gif": "/static/media/portfolio.414dfbd9.gif",
     "static/media/profile-image.png": "/static/media/profile-image.3e0a5f98.png",
@@ -55,8 +57,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2781e2dc.js",
-    "static/js/2.643b9762.chunk.js",
-    "static/css/main.37f7feb6.chunk.css",
-    "static/js/main.716d5985.chunk.js"
+    "static/js/2.290011e2.chunk.js",
+    "static/css/main.53005d44.chunk.css",
+    "static/js/main.a268a720.chunk.js"
   ]
 }

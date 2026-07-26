@@ -138,6 +138,10 @@
 .experience-card-logo {
   width: 100px;
   height: 100px;
+  /* contain + padding keeps wide wordmarks from being stretched into the circle */
+  object-fit: contain;
+  background-color: #fff;
+  padding: 10px;
   -webkit-box-shadow: 4px 3px 20px -2px grey;
   -moz-box-shadow: 4px 3px 20px -2px grey;
   box-shadow: 4px 3px 20px -2px grey;
@@ -196,6 +200,31 @@
   font-family: "Google Sans Regular";
 }
 
+
+.experience-card-bullets {
+  margin: 16px 0 4px 0;
+  padding-left: 20px;
+  font-family: "Google Sans Regular";
+  font-size: 15px;
+  line-height: 1.55;
+  text-align: left;
+}
+
+.experience-card-bullets > li {
+  margin-bottom: 7px;
+}
+
+.experience-card-bullets > li::marker {
+  color: #868e96;
+}
+
+@media (max-width: 768px) {
+  .experience-card-bullets {
+    padding-left: 18px;
+    margin-right: 8px;
+    font-size: 14px;
+  }
+}
 
 .experience-card-company > a {
   position: relative;

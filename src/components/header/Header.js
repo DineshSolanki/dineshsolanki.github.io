@@ -108,6 +108,20 @@ class Header extends Component {
                   Contact Me
                 </NavLink>
               </li>
+              <li>
+                <a
+                  href={greeting.resumeLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: theme.text, fontWeight: "bold" }}
+                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
+                  onMouseOut={(event) => onMouseOut(event)}
+                  onFocus={(event) => onMouseEnter(event, theme.highlight)}
+                  onBlur={(event) => onMouseOut(event)}
+                >
+                  Résumé
+                </a>
+              </li>
             </ul>
           </header>
         </div>

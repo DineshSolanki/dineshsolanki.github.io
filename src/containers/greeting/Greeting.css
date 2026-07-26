@@ -27,6 +27,7 @@
 }
 .button-greeting-div {
   display: flex;
+  gap: 16px;
   margin-top: 20px;
 }
 
@@ -37,17 +38,64 @@
   font-family: "Google Sans Bold";
 }
 
-.greeting-nickname {
+.greeting-role {
   font-size: 30px;
-  line-height: 0px;
-  font-family: "Google Sans Bold Italic";
+  line-height: 1.2;
+  margin: 10px 0 4px 0;
+  font-family: "Google Sans Bold";
+}
+
+.greeting-stack {
+  font-size: 19px;
+  line-height: 1.4;
+  margin: 0 0 14px 0;
+  font-family: "Google Sans Medium";
+}
+
+.greeting-current {
+  display: inline-block;
+  font-size: 15px;
+  font-family: "Google Sans Medium";
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin: 0 0 18px 0;
 }
 
 .greeting-text-p {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 19px;
+  line-height: 1.6;
   margin-right: 40px;
-  font-family: "Google Sans Medium";
+  font-family: "Google Sans Regular";
+}
+
+.greeting-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin: 26px 40px 22px 0;
+}
+
+.greeting-stat {
+  display: flex;
+  flex-direction: column;
+  border-left: 3px solid transparent;
+  padding-left: 12px;
+  min-width: 185px;
+  flex: 1 1 185px;
+}
+
+.greeting-stat-value {
+  font-size: 20px;
+  line-height: 1.2;
+  white-space: nowrap;
+  font-family: "Google Sans Bold";
+}
+
+.greeting-stat-label {
+  font-size: 13px;
+  line-height: 1.4;
+  margin-top: 5px;
+  font-family: "Google Sans Regular";
 }
 
 .greeting-image-div > * {
@@ -60,28 +108,53 @@
   .greeting-text {
     font-size: 50px;
   }
+  .greeting-role {
+    font-size: 26px;
+  }
   .greeting-text-p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media (max-width: 768px) {
   .button-greeting-div {
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .greeting-text {
     font-size: 30px;
     margin-top: 0px;
     text-align: center;
   }
-  .greeting-nickname {
-    font-size: 25px;
+  .greeting-role {
+    font-size: 22px;
+    text-align: center;
+  }
+  .greeting-stack {
+    font-size: 16px;
+    text-align: center;
+  }
+  .greeting-current {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
   }
   .greeting-text-p {
     font-size: 16px;
     margin-right: 0px;
-    line-height: normal;
+    line-height: 1.5;
     text-align: center;
+  }
+  .greeting-stats {
+    margin-right: 0px;
+    gap: 16px;
+  }
+  .greeting-stat {
+    border-left: none;
+    padding-left: 0px;
+    text-align: center;
+    align-items: center;
   }
   .greeting-main {
     display: block;

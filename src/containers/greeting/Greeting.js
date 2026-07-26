@@ -2,14 +2,14 @@ import React from "react";
 import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import { greeting } from "../../portfolio";
+import { greeting, impactStats } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
 
 export default function Greeting(props) {
   const theme = props.theme;
   return (
-    <Fade bottom duration={2000} distance="40px">
+    <Fade bottom duration={1000} distance="40px">
       <div className="greet-main" id="greeting">
         <div className="greeting-main">
           <div className="greeting-text-div">
@@ -17,38 +17,68 @@ export default function Greeting(props) {
               <h1 className="greeting-text" style={{ color: theme.text }}>
                 {greeting.title}
               </h1>
-              {greeting.nickname && (
-                <h2 className="greeting-nickname" style={{ color: theme.text }}>
-                  ( {greeting.nickname} )
-                </h2>
-              )}
+              <h2 className="greeting-role" style={{ color: theme.text }}>
+                {greeting.role}
+              </h2>
+              <p
+                className="greeting-stack"
+                style={{ color: theme.secondaryText }}
+              >
+                {greeting.roleStack}
+              </p>
+              <p
+                className="greeting-current"
+                style={{ color: theme.text, backgroundColor: theme.highlight }}
+              >
+                {greeting.currentPosition}
+              </p>
               <p
                 className="greeting-text-p subTitle"
                 style={{ color: theme.secondaryText }}
               >
                 {greeting.subTitle}
               </p>
+
+              <div className="greeting-stats">
+                {impactStats.map((stat) => (
+                  <div
+                    className="greeting-stat"
+                    key={stat.value}
+                    style={{ borderLeftColor: theme.headerColor }}
+                  >
+                    <span
+                      className="greeting-stat-value"
+                      style={{ color: theme.text }}
+                    >
+                      {stat.value}
+                    </span>
+                    <span
+                      className="greeting-stat-label"
+                      style={{ color: theme.secondaryText }}
+                    >
+                      {stat.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
               <SocialMedia theme={theme} />
-              <div className="portfolio-repo-btn-div">
+              <div className="button-greeting-div">
                 <Button
-                  text="⭐ Star Me On Github"
+                  text="Download Résumé"
                   newTab={true}
-                  href={greeting.portfolio_repository}
+                  href={greeting.resumeLink}
                   theme={theme}
-                  className="portfolio-repo-btn"
+                />
+                <Button
+                  text="Email Me"
+                  href={`mailto:${greeting.email}`}
+                  theme={theme}
                 />
               </div>
-              {/* <div className="button-greeting-div">
-              <Button text="Contact me" href="#contact" />
-              <Button text="See my resume" newTab={true} href={greeting.resumeLink} />
-            </div> */}
             </div>
           </div>
           <div className="greeting-image-div">
-            {/* <img
-							alt="saad sitting on table"
-							src={require("../../assets/images/feelingProud.svg")}
-						></img> */}
             <FeelingProud theme={theme} />
           </div>
         </div>

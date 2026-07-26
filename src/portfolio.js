@@ -7,15 +7,14 @@ const settings = {
 
 //SEO Related settings
 const seo = {
-  title: "Dinesh's Portfolio",
+  title: "Dinesh Solanki — Senior Backend Engineer (Java, Spring Boot)",
   description:
-    "I'm Dinesh Solanki, I'm passionate about coding and contributing to open-source projects with experience building backend systems and APIs in Java and C#. " +
-    "I'm passionate about writing clean, readable code and delivering robust, scalable solutions. " +
-    "I'm always open to collaborating on new and innovative ideas.",
+    "Senior Backend Engineer with ~5 years building and owning secure, scalable backend systems in Java, Spring Boot and cloud-native microservices. " +
+    "Specialized in API security and identity — Keycloak, OAuth2, JWT and ISTIO — across compliance-heavy enterprise platforms.",
   og: {
-    title: "Dinesh Solanki Portfolio",
+    title: "Dinesh Solanki — Senior Backend Engineer",
     type: "website",
-    url: "https://aprogrammer.wordpress.com/",
+    url: "https://dineshsolanki.github.io/",
   },
 };
 
@@ -23,14 +22,34 @@ const seo = {
 const greeting = {
   title: "Dinesh Solanki",
   logo_name: "DineshSolanki",
-  nickname: "Dinesh_Solanki",
+  role: "Senior Backend Engineer",
+  roleStack: "Java · Spring Boot · Cloud-Native Microservices",
+  currentPosition: "Senior Technical Consultant @ EY",
+  email: "solankid297@gmail.com",
   subTitle:
-    "I'm Dinesh Solanki, I'm passionate about coding and contributing to open-source projects with experience building backend systems and APIs in Java and C#. I'm passionate about writing clean, readable code and delivering robust, scalable solutions. I'm always open to collaborating on new and innovative ideas.",
+    "~5 years building and owning secure, scalable backend systems for compliance-heavy enterprise platforms — digital signatures, remote notarization, identity verification and workflow automation. " +
+    "I specialize in API security and identity with Keycloak, OAuth2, JWT and ISTIO.",
   resumeLink:
     "https://drive.google.com/file/d/1tNeM4Lq9leQob1oQnWNXw60sEvFiuuIf/view?usp=sharing",
   portfolio_repository: "https://github.com/DineshSolanki/DineshSolanki",
   githubProfile: "https://github.com/DineshSolanki",
 };
+
+// Headline metrics shown on the home page, most quantified first
+const impactStats = [
+  {
+    value: "2–3 hrs → ~10 min",
+    label: "Serialization workflow optimized for 10k+ serials",
+  },
+  {
+    value: "25 → 100",
+    label: "OWASP security score raised; PCI compliance achieved",
+  },
+  {
+    value: "4 regions",
+    label: "Delivered with teams across Philippines, US, EU & India",
+  },
+];
 
 const socialMediaLinks = [
   {
@@ -80,12 +99,12 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "Java full-stack Development",
+      title: "Backend & Microservices",
       fileName: "DataScienceImg",
       skills: [
-        "⚡ Developing highly scalable production ready micro-services for a variety of use cases",
-        "⚡ Experience of working with Spring Boot, Angular, Keycloak and more",
-        "⚡ Restful API development using Java, Spring Boot and API Security",
+        "⚡ Owning backend modules end-to-end — from design and implementation through UAT stabilization and release",
+        "⚡ Building cloud-native microservices with Java and Spring Boot for enterprise supply-chain, healthcare and document platforms",
+        "⚡ Designing RESTful APIs and resolving large-payload and throughput bottlenecks, including MongoDB document limits",
       ],
       softwareSkills: [
         {
@@ -122,58 +141,65 @@ const skills = {
           },
         },
         {
+          skillName: "MongoDB",
+          fontAwesomeClassname: "simple-icons:mongodb",
+          style: {
+            color: "#47A248",
+          },
+        },
+      ],
+    },
+    {
+      title: "Security & IAM",
+      fileName: "SecurityImg",
+      skills: [
+        "⚡ Raised an application's security posture against OWASP standards from a score of 25 to 100 — a first for the product — and achieved PCI compliance",
+        "⚡ Implementing authentication and authorization with Keycloak, OAuth2 and JWT, including multi-realm (multi-tenant) token validation",
+        "⚡ Securing service-to-service traffic and access-control flows with ISTIO",
+      ],
+      softwareSkills: [
+        {
           skillName: "Keycloak",
           imageSrc: "keycloak-logo.svg",
         },
         {
-          skillName: "Azure Cloud Services",
-          fontAwesomeClassname: "devicon:azure-wordmark",
+          skillName: "Spring Security",
+          fontAwesomeClassname: "simple-icons:springsecurity",
+          style: {
+            color: "#6DB33F",
+          },
+        },
+        {
+          skillName: "JWT",
+          fontAwesomeClassname: "simple-icons:jsonwebtokens",
+          style: {
+            color: "#FB015B",
+          },
+        },
+        {
+          skillName: "Istio",
+          fontAwesomeClassname: "simple-icons:istio",
+          style: {
+            color: "#466BB0",
+          },
+        },
+        {
+          skillName: "OWASP",
+          fontAwesomeClassname: "simple-icons:owasp",
+          style: {
+            color: "#0B7285",
+          },
         },
       ],
     },
     {
-      title: "C# Desktop Development",
-      fileName: "FullStackImg",
-      skills: [
-        "⚡ Building performant and beautiful desktop applications using C#",
-        "⚡ Developing WPF applications with MVVM architecture with Prism",
-        "⚡ Creating Winforms applications",
-        "⚡ Experience with DevExpress, Telerik, syncfusion and more",
-      ],
-      softwareSkills: [
-        {
-          skillName: "C#",
-          fontAwesomeClassname: "simple-icons:csharp",
-          style: {
-            color: "#953DAC",
-          },
-        },
-        {
-          skillName: "WPF",
-          imageSrc: "WPF-logo.png",
-        },
-        {
-          skillName: "Prism",
-          imageSrc: "prism-library-logo.png",
-        },
-        {
-          skillName: "DevExpress",
-          fontAwesomeClassname: "simple-icons:devexpress",
-          style: {
-            backgroundColor: "white",
-            color: "#FF7200",
-          },
-        }
-      ],
-    },
-    {
-      title: "Cloud Infra-Architecture",
+      title: "Cloud & DevOps",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Experience working on multiple cloud platforms",
-        "⚡ Hosting and maintaining microservices on virtual machine instances along with integration of databases",
-        "⚡ Deploying microservices to kubernetes clusters",
-        "⚡ Creating middleware for storage microservice to store and retrieve data from GCP and Azure cloud storage",
+        "⚡ Experience working across multiple cloud platforms",
+        "⚡ Hosting and maintaining microservices on virtual machine instances along with database integration",
+        "⚡ Deploying microservices to Kubernetes clusters and containerising services with Docker",
+        "⚡ Building middleware for a storage microservice backed by GCP and Azure cloud storage",
       ],
       softwareSkills: [
         {
@@ -212,13 +238,6 @@ const skills = {
           },
         },*/
         {
-          skillName: "MongoDB",
-          fontAwesomeClassname: "simple-icons:mongodb",
-          style: {
-            color: "#47A248",
-          },
-        },
-        {
           skillName: "Docker",
           fontAwesomeClassname: "simple-icons:docker",
           style: {
@@ -233,46 +252,41 @@ const skills = {
           },
         },
       ],
-    }
-/*    {
-      title: "UI/UX Design",
-      fileName: "DesignImg",
+    },
+    {
+      title: "C# & Desktop",
+      fileName: "FullStackImg",
       skills: [
-        "⚡ Designing highly attractive user interface for mobile and web applications",
-        "⚡ Customizing logo designs and building logos from scratch",
-        "⚡ Creating the flow of application functionalities to optimize user experience",
+        "⚡ Building performant desktop applications in C#, including FoliCon — an open-source icon utility with a real user base",
+        "⚡ Developing WPF applications on an MVVM architecture with Prism",
+        "⚡ Experience with the DevExpress, Telerik and Syncfusion component suites",
       ],
       softwareSkills: [
         {
-          skillName: "Adobe XD",
-          fontAwesomeClassname: "simple-icons:adobexd",
+          skillName: "C#",
+          fontAwesomeClassname: "simple-icons:csharp",
           style: {
-            color: "#FF2BC2",
+            color: "#953DAC",
           },
         },
         {
-          skillName: "Figma",
-          fontAwesomeClassname: "simple-icons:figma",
-          style: {
-            color: "#F24E1E",
-          },
+          skillName: "WPF",
+          imageSrc: "WPF-logo.png",
         },
         {
-          skillName: "Adobe Illustrator",
-          fontAwesomeClassname: "simple-icons:adobeillustrator",
-          style: {
-            color: "#FF7C00",
-          },
+          skillName: "Prism",
+          imageSrc: "prism-library-logo.png",
         },
         {
-          skillName: "Inkscape",
-          fontAwesomeClassname: "simple-icons:inkscape",
+          skillName: "DevExpress",
+          fontAwesomeClassname: "simple-icons:devexpress",
           style: {
-            color: "#000000",
+            backgroundColor: "white",
+            color: "#FF7200",
           },
         },
       ],
-    },*/
+    },
   ],
 };
 
@@ -473,13 +487,37 @@ const certifications = {
   ],
 };
 
+const awards = {
+  title: "Awards & Recognition",
+  data: [
+    {
+      title: "Quarterly Award",
+      subtitle: "Ness Digital Engineering · 2025",
+      logo_path: "ness-logo.png",
+      alt_name: "Ness Digital Engineering",
+    },
+    {
+      title: "Spot Award",
+      subtitle: "Ness Digital Engineering · 2025",
+      logo_path: "ness-logo.png",
+      alt_name: "Ness Digital Engineering",
+    },
+    {
+      title: "Extra Mile Award",
+      subtitle: "Exela Technologies",
+      logo_path: "exela-logo.png",
+      alt_name: "Exela Technologies",
+    },
+  ],
+};
+
 // Experience Page
 const experience = {
   title: "Experience",
   subtitle: "Work",
   description:
-    "I started my professional career with Java and have been continuously developing in the Java tech stack and its surrounding ecosystem. " +
-      "I am also actively involved with many open-source communities.",
+    "~5 years building and owning backend systems in Java and Spring Boot, across document-centric and compliance-heavy enterprise platforms. " +
+    "I work deeply on backend engineering, system design and security-focused problem solving, and stay actively involved in open-source communities.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -487,23 +525,66 @@ const experience = {
       work: true,
       experiences: [
         {
+          title: "Senior Technical Consultant",
+          company: "EY",
+          company_url: "https://www.ey.com/",
+          logo_path: "ey-logo.png",
+          duration: "Mar 2026 - Present",
+          location: "New Delhi, India",
+          description: [
+            "Building Java microservices and cloud-native systems for enterprise clients.",
+            "Working across backend service design, security and identity (Keycloak, OAuth2) and DevOps practices.",
+          ],
+          color: "#2E2E38",
+        },
+        {
+          title: "Senior Java Engineer",
+          company: "Ness Digital Engineering",
+          company_url: "https://www.ness.com/",
+          logo_path: "ness-logo.png",
+          duration: "Oct 2024 - Feb 2026",
+          location: "Pune, Maharashtra, India",
+          description: [
+            "Owned backend services for enterprise supply-chain and healthcare systems using Java and Spring Boot.",
+            "Optimized high-volume serialization workflows (10k+ serials), cutting processing time from 2–3 hours to ~10 minutes.",
+            "Diagnosed and resolved large-payload and performance issues, including MongoDB document size limits.",
+            "Implemented security and access-control flows using ISTIO and OAuth2.",
+            "Played a key role in stabilizing UAT phases and improving release readiness; handled C1/C2 incidents under strict SLAs.",
+            "Collaborated across a multi-regional team spanning the Philippines, US, EU and India, working with QA, product and engineering to resolve critical defects.",
+            "Mentored interns, reviewed pull requests, influenced architecture decisions and presented backend demos to clients.",
+          ],
+          color: "#00195F",
+        },
+        {
           title: "Software Engineer",
           company: "Exela Technologies",
           company_url: "https://www.exelatech.com/",
           logo_path: "exela-logo.png",
-          duration: "Nov 2021 - July 2024",
+          duration: "Jan 2022 - Aug 2024",
           location: "Pune, Maharashtra, India (Remote)",
-          description:
-            "\n● Developed new features enabling key product (DrySign and ERN) to reach milestone release." +
-            "\n● Enhanced application security strengthening controls around access, input validation, rate limiting etc. - raised score from 25 to 100 on OWASP standards" +
-            "\n● Achieved PCI compliance" +
-            "\n● Promoted clean coding best practices through code reviews and mentoring of new team members" +
-            "\n● Communicating with end-users in case of product issue" +
-            "\n● Developed replacements for legacy services" +
-            "\n● Lead team of up to 6 developers for critical refactoring and API security overhaul" +
-            "\n● Documented various process and automated tasks.",
+          description: [
+            "Java full-stack developer (backend-heavy) across Remote Notarization, DrySign, DMR and in-house products.",
+            "Raised the application's security score from 25 to 100 against OWASP standards — a first for the product — and achieved PCI compliance.",
+            "Led a team of up to 6 developers through a critical refactoring and API security overhaul.",
+            "Integrated Keycloak for IAM and implemented Stripe payments.",
+            "Developed new features that took DrySign and ERN to a milestone release, and restructured the existing product for a version 2.",
+            "Built replacements for legacy services, and documented and automated recurring processes.",
+            "Promoted clean, readable code through reviews and mentoring of new team members.",
+          ],
           color: "#000000",
-        }
+        },
+        {
+          title: "Software Engineer Trainee",
+          company: "Exela Technologies",
+          company_url: "https://www.exelatech.com/",
+          logo_path: "exela-logo.png",
+          duration: "Nov 2021 - Jan 2022",
+          location: "Pune, Maharashtra, India",
+          description: [
+            "Joined the Java backend team as a trainee, ramping up on Spring Boot and the product stack before converting to a full-time engineer.",
+          ],
+          color: "#000000",
+        },
       ],
     },
     /*{
@@ -699,11 +780,13 @@ export {
   settings,
   seo,
   greeting,
+  impactStats,
   socialMediaLinks,
   skills,
   competitiveSites,
   degrees,
   certifications,
+  awards,
   experience,
   projectsHeader,
   publicationsHeader,

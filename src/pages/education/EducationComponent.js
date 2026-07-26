@@ -4,10 +4,10 @@ import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import Educations from "../../containers/education/Educations";
 import Certifications from "../../containers/certifications/Certifications";
+import Awards from "../../containers/awards/Awards";
 import CompetitiveSites from "../../components/competitiveSites/CompetitiveSites";
 import EducationImg from "./EducationImg";
-import { competitiveSites } from "../../portfolio";
-import { certifications } from "../../portfolio";
+import { competitiveSites, certifications, awards } from "../../portfolio";
 import "./EducationComponent.css";
 import { Fade } from "react-reveal";
 
@@ -32,13 +32,18 @@ class Education extends Component {
                   Education
                 </h1>
                 <h3 className="heading-sub-text" style={{ color: theme.text }}>
-                  Basic Qualification and Certifcations
+                  Qualifications, Awards and Recognition
                 </h3>
-                <CompetitiveSites logos={competitiveSites.competitiveSites} />
+                {competitiveSites.competitiveSites.length > 0 ? (
+                  <CompetitiveSites
+                    logos={competitiveSites.competitiveSites}
+                  />
+                ) : null}
               </div>
             </div>
           </Fade>
           <Educations theme={this.props.theme} />
+          {awards.data.length > 0 ? <Awards theme={this.props.theme} /> : null}
           {certifications.certifications.length > 0 ? (
             <Certifications theme={this.props.theme} />
           ) : null}

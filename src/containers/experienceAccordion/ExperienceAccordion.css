@@ -6,6 +6,17 @@
   font-family: "Google Sans Regular";
 }
 
+.experience-section {
+  margin-bottom: 30px;
+}
+
+.experience-section-title {
+  font-family: "Google Sans Medium";
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 768px) {
   .experience-accord {
     margin: 20px;
