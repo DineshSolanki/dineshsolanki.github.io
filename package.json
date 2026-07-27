@@ -4,9 +4,9 @@
   "version": "0.1.0",
   "homepage": "https://dineshsolanki.github.io",
   "scripts": {
-    "build": "react-scripts --openssl-legacy-provider build",
+    "build": "react-scripts --openssl-legacy-provider build && node -e \"fs=require('fs');fs.existsSync('docs')&&fs.rmSync('docs',{recursive:true});fs.renameSync('build','docs')\"",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages -d build",
+    "deploy": "gh-pages -b gh-pages -d docs",
     "eject": "react-scripts eject",
     "start": "react-scripts --openssl-legacy-provider start",
     "test": "react-scripts test"
