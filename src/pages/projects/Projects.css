@@ -10,6 +10,7 @@
 
 .projects-heading-div {
   display: flex;
+  align-items: center;
 }
 
 .projects-heading-div > * {
@@ -37,7 +38,7 @@
   font-family: "Google Sans Medium";
   line-height: 1.1;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .projects-heading-sub-text {
@@ -51,45 +52,199 @@
   font-size: 20px;
   line-height: 30px;
   margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 780px;
   font-family: "Google Sans Medium";
 }
+
+.projects-section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.projects-nav-pill {
+  font-family: "Google Sans Medium";
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.projects-nav-pill:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.projects-section-block {
+  margin-top: 64px;
+}
+
+.section-heading-div {
+  text-align: center;
+}
+
+.section-heading-text {
+  font-size: 46px;
+  font-weight: 600;
+  font-family: "Google Sans Medium";
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.corporate-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin: 40px 40px 0 40px;
+}
+
+.corporate-projects-grid > * {
+  height: 100%;
+}
+
+@media (min-width: 961px) {
+  .corporate-projects-grid > *:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    width: calc(50% - 12px);
+    justify-self: center;
+  }
+}
+
 .publications-heading-text-div {
   text-align: center;
   font-family: "Google Sans Regular";
-  margin-top: 70px;
+  margin-top: 20px;
 }
 
 .publications-heading-text {
-  font-size: 56px;
+  font-size: 46px;
   font-weight: 600;
+  font-family: "Google Sans Medium";
 }
+
 .repo-cards-div-main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 1rem 1rem;
+  gap: 1.25rem;
   margin-left: 40px;
   margin-right: 40px;
-  margin-top: 60px;
+  margin-top: 40px;
+}
+
+.upstream-contributions-wrap {
+  margin: 56px 40px 0 40px;
+}
+
+.upstream-heading-div {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.upstream-heading-text {
+  font-family: "Google Sans Medium";
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.upstream-subheading-text {
+  font-family: "Google Sans Regular";
+  font-size: 17px;
+  line-height: 1.5;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.upstream-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.opensource-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 36px;
+}
+
+.opensource-cta-row .project-button {
+  margin-top: 0;
+}
+
+.opensource-cta-row .main-button {
+  margin-top: 0;
+  margin-right: 0;
+}
+
+.opensource-activity-link {
+  font-family: "Google Sans Regular";
+  font-weight: 700;
+  font-size: 17px;
+  padding: 13px 22px;
+  border-radius: 6px;
+  border: 1px solid;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.opensource-activity-link:hover {
+  transform: translateY(-3px);
+  opacity: 0.85;
+  text-decoration: none;
 }
 
 @media (max-width: 1380px) {
   .projects-heading-text {
     font-size: 50px;
-    margin-top: 80px;
+    margin-top: 60px;
   }
+
+  .section-heading-text,
+  .publications-heading-text {
+    font-size: 40px;
+  }
+
   .projects-heading-sub-text {
     font-size: 25px;
   }
 }
 
+@media (max-width: 1100px) {
+  .upstream-cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 960px) {
+  .corporate-projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .projects-heading-text,
+  .section-heading-text,
   .publications-heading-text {
     font-size: 30px;
     margin-top: 20px;
+  }
+
+  .upstream-heading-text {
+    font-size: 24px;
+  }
+
+  .upstream-subheading-text {
+    font-size: 15px;
   }
 
   .projects-heading-sub-text {
@@ -104,14 +259,23 @@
     font-size: 16px;
     margin-right: 0px;
     margin-left: 0px;
-    line-height: normal;
+    line-height: 1.5;
     text-align: center;
   }
 
+  .corporate-projects-grid,
+  .upstream-contributions-wrap {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .upstream-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
   .repo-cards-div-main {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 30px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 28px;
   }
 }

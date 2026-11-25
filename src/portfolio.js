@@ -628,8 +628,318 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects makes use of vast variety of latest technology tools. My best experience is to create Java backend services and C# desktop applications.",
+    "Enterprise backend platforms delivered in production alongside open-source libraries, developer tools, and upstream contributions across Java, Spring Boot, and C#.",
   avatar_image_path: "projects_image.svg",
+};
+
+const corporateProjectsHeader = {
+  title: "Corporate Projects",
+  description:
+    "Production SaaS platforms and enterprise backend systems architected, secured, and scaled across pharma serialization, e-signatures, remote notarization, and digital mailroom automation.",
+};
+
+const corporateProjects = {
+  data: [
+    {
+      id: "ey-cloud-microservices",
+      title: "Enterprise Cloud-Native Microservices Platform",
+      company: "EY",
+      company_url: "https://www.ey.com/",
+      logo_path: "ey-logo.png",
+      role: "Senior Technical Consultant",
+      duration: "Mar 2026 - Present",
+      domain: "Enterprise Cloud & Identity",
+      impact: "Cloud-Native Java · IAM",
+      scopeLabel: "Enterprise",
+      accentColor: "#2E2E38",
+      summary:
+        "Designing and delivering Java and Spring Boot microservices for enterprise client engagements with integrated identity and DevOps workflows.",
+      highlights: [
+        "Architecting resilient RESTful backend services and cloud-native deployment pipelines.",
+        "Implementing centralized authentication and authorization using Keycloak and OAuth2.",
+      ],
+      techStack: [
+        "Java",
+        "Spring Boot",
+        "Keycloak",
+        "OAuth2",
+        "Microservices",
+        "DevOps",
+      ],
+    },
+    {
+      id: "ness-systech-traceiq",
+      title: "Systech TraceIQ™ — Pharmaceutical Track & Trace",
+      company: "Ness Digital Engineering",
+      company_url: "https://www.ness.com/",
+      logo_path: "ness-logo.png",
+      product_name: "Systech TraceIQ™",
+      product_url:
+        "https://www.systechone.com/products/pharmaceutical-track-trace/",
+      product_link_label: "Systech TraceIQ ↗",
+      product_logo_path: "systech-logo.png",
+      product_logo_alt: "Systech connected solutions by Markem-Imaje",
+      role: "Senior Java Engineer",
+      duration: "Oct 2024 - Feb 2026",
+      domain: "Pharma Track & Trace · DSCSA & EU FMD",
+      impact: "2–3 hrs → ~10 min (10k+ serials)",
+      scopeLabel: "Production SaaS",
+      accentColor: "#2A64B0",
+      summary:
+        "Intelligent pharmaceutical traceability platform centralizing GS1/EPCIS serialization data, exception management, and trading-partner onboarding across DSCSA and EU FMD compliance workflows.",
+      highlights: [
+        "Owned core Java and Spring Boot microservices handling compliance-critical serialization and EPCIS workflows across US, EU, India, and Philippines teams.",
+        "Optimized high-volume serialization pipelines (10k+ serials), cutting runtime from 2–3 hours to ~10 minutes and resolving MongoDB document size bottlenecks.",
+        "Implemented Keycloak IAM, OAuth2, and ISTIO service-mesh access controls with Blackduck and Coverity SAST/DAST security scanning.",
+      ],
+      techStack: [
+        "Java",
+        "Spring Boot",
+        "MongoDB",
+        "GS1 / EPCIS",
+        "DSCSA / EU FMD",
+        "Keycloak",
+        "ISTIO",
+      ],
+    },
+    {
+      id: "exela-drysign-platform",
+      title: "DrySign® — Enterprise E-Signature Platform",
+      company: "Exela Technologies",
+      company_url: "https://www.exelatech.com/",
+      logo_path: "exela-logo.png",
+      product_name: "DrySign by Exela",
+      product_url: "https://www.linkedin.com/showcase/drysign-by-exela/home/",
+      product_link_label: "DrySign Showcase ↗",
+      product_logo_path: "drysign-logo.png",
+      product_logo_alt: "DrySign by Exela",
+      role: "Software Engineer",
+      duration: "Jan 2022 - Aug 2024",
+      domain: "ESIGN & UETA · E-Signature & Payments",
+      impact: "OWASP 25 → 100 · PCI Compliant",
+      scopeLabel: "Production SaaS",
+      accentColor: "#38B6FF",
+      summary:
+        "Cloud-based digital signature platform compliant with ESIGN Act and UETA, supporting individual, group, and hierarchical signing, MFA, tamper-proof timestamped audit trails, and cloud drive integrations.",
+      highlights: [
+        "Raised DrySign's security posture against OWASP standards from 25 to 100 — a first for the product — and achieved PCI compliance.",
+        "Led up to 6 developers through critical API security refactoring and version 2 platform restructuring.",
+        "Integrated Keycloak IAM and Stripe subscription billing while delivering core features for milestone releases.",
+      ],
+      techStack: [
+        "Java",
+        "Spring Boot",
+        "Spring Security",
+        "Keycloak",
+        "Stripe",
+        "Angular",
+        "OWASP / PCI",
+      ],
+    },
+    {
+      id: "exela-ern-notarization",
+      title: "Exela RN (ERN) — Remote Online Notarization",
+      company: "Exela Technologies",
+      company_url: "https://www.exelatech.com/",
+      logo_path: "exela-logo.png",
+      product_name: "Exela RN (ERN)",
+      product_url:
+        "https://www.globenewswire.com/news-release/2021/12/07/2347384/0/en/exela-technologies-launches-remote-online-notarization-exela-rn.html",
+      product_link_label: "Launch Announcement ↗",
+      role: "Software Engineer",
+      duration: "Nov 2021 - Aug 2024",
+      domain: "Remote Online Notarization (RON)",
+      impact: "Milestone Release · DrySign & DMR Sync",
+      scopeLabel: "Production SaaS",
+      accentColor: "#1D3557",
+      summary:
+        "Remote Online Notarization web portal connecting signatories with credentialed notaries for scheduled, recorded sessions, electronic notary journals, and session vaults integrated with DrySign and Digital Mailroom.",
+      highlights: [
+        "Delivered core Java and Spring Boot backend capabilities taking Exela RN from early product stages to a major milestone release.",
+        "Supported notarized workflow integrations bridging ERN with DrySign e-signatures and Digital Mailroom onboarding (USPS Form 1583).",
+        "Built REST APIs, scheduling and payment backend flows, and automated recurring operational processes.",
+      ],
+      techStack: [
+        "Java",
+        "Spring Boot",
+        "REST APIs",
+        "Keycloak",
+        "SQL",
+        "OAuth2",
+      ],
+    },
+    {
+      id: "exela-dmr-mailroom",
+      title: "Digital Mailroom (DMR) — Cloud Mail & IDP Automation",
+      company: "Exela Technologies",
+      company_url: "https://www.exelatech.com/",
+      logo_path: "exela-logo.png",
+      product_name: "Digital Mailroom (DMR)",
+      product_url: "https://getdigitalmailroom.com/",
+      product_link_label: "Product Website ↗",
+      product_logo_path: "dmr-logo.svg",
+      product_logo_bg: "#0B2239",
+      product_logo_alt: "Digital Mailroom (DMR)",
+      role: "Software Engineer",
+      duration: "Nov 2021 - Aug 2024",
+      domain: "IDP / OCR Automation · HIPAA & SOC 2",
+      impact: "Legacy Modernization & Automation",
+      scopeLabel: "Production SaaS",
+      accentColor: "#0B5FFF",
+      summary:
+        "Cloud SaaS digital mailroom combining physical mail digitization across processing centers with AI-powered OCR/ICR document processing, rule-based workflow routing, SFTP/API integrations, and virtual business addresses.",
+      highlights: [
+        "Engineered Java and Spring Boot replacements for legacy mailroom backend services to improve reliability and maintainability.",
+        "Automated recurring document-processing and backend operational workflows across DMR and companion Exela services.",
+        "Promoted maintainable codebases through structured peer code reviews and mentoring incoming team members.",
+      ],
+      techStack: [
+        "Java",
+        "Spring Boot",
+        "REST APIs",
+        "SQL",
+        "MongoDB",
+        "Microservices",
+      ],
+    },
+  ],
+};
+
+const openSourceProjectsHeader = {
+  title: "Open Source Projects",
+  description:
+    "Authored developer tools, libraries, and desktop applications — plus merged contributions to upstream open-source ecosystems.",
+  contributionsTitle: "Upstream Open Source Contributions",
+  contributionsDescription:
+    "Merged pull requests and enhancements contributed to widely used community and enterprise open-source repositories.",
+};
+
+const openSourceProjects = {
+  // Metadata tags mapped by repo name for pinned repos from src/shared/opensource/projects.json
+  repoCategories: {
+    FoliCon: "Desktop App",
+    NullNotion: "IntelliJ Plugin",
+    Samay: "Spring Boot Library",
+    "BatchMuxer-Subtitle": "CLI Utility",
+    AudioFixer: "Desktop Utility",
+  },
+  // Additional authored open-source repos beyond the 5 pinned items in projects.json
+  additionalRepos: [
+    {
+      id: "oss-sonarqube-status-plus",
+      name: "sonarqube-status-plus",
+      category: "VS Code Extension",
+      createdAt: "2025-02-15T00:00:00Z",
+      url: "https://github.com/DineshSolanki/sonarqube-status-plus",
+      description:
+        "VS Code extension displaying SonarQube analysis status, quality gates, and code metrics directly inside the editor.",
+      isFork: false,
+      languages: [
+        { name: "TypeScript", iconifyClass: "logos-typescript-icon" },
+      ],
+    },
+    {
+      id: "oss-multi-tenant-mongo",
+      name: "multi-tenant-mongo-spring-boot-starter",
+      category: "Spring Boot Starter",
+      createdAt: "2024-12-28T00:00:00Z",
+      url:
+        "https://github.com/DineshSolanki/multi-tenant-mongo-spring-boot-starter",
+      description:
+        "Spring Boot starter library enabling clean multi-tenant MongoDB resolution and configuration out of the box.",
+      isFork: false,
+      languages: [
+        { name: "Java", iconifyClass: "logos-java" },
+        { name: "Spring Boot", iconifyClass: "simple-icons:springboot" },
+        { name: "MongoDB", iconifyClass: "simple-icons:mongodb" },
+      ],
+    },
+    {
+      id: "oss-deviantart-net",
+      name: "DeviantArt.Net",
+      category: ".NET SDK",
+      createdAt: "2024-09-05T00:00:00Z",
+      url: "https://github.com/DineshSolanki/DeviantArt.Net",
+      description:
+        ".NET client library for the DeviantArt REST API covering Deviations, Collections, Gallery, Comments, Messages, and User endpoints.",
+      isFork: false,
+      languages: [{ name: "C#", iconifyClass: "logos-c-sharp" }],
+    },
+    {
+      id: "oss-parameter-store-manager",
+      name: "parameter-store-manager",
+      category: "Node.js Utility",
+      createdAt: "2025-02-01T00:00:00Z",
+      url: "https://github.com/DineshSolanki/parameter-store-manager",
+      description:
+        "Node.js utility for managing configuration parameters with automated GitHub Actions release workflows.",
+      isFork: false,
+      languages: [{ name: "JavaScript", iconifyClass: "logos-javascript" }],
+    },
+  ],
+  upstreamContributions: [
+    {
+      id: "upstream-keycloak",
+      repo: "keycloak/keycloak",
+      url: "https://github.com/keycloak/keycloak/pull/28690",
+      badge: "Merged PR #28690",
+      language: "Java",
+      iconifyClass: "logos-java",
+      description:
+        "Refactored UI element identifiers from IDs to classes (#24462) in the upstream Keycloak identity and access management platform.",
+    },
+    {
+      id: "upstream-schibsted-jslt",
+      repo: "schibsted/jslt",
+      url: "https://github.com/schibsted/jslt/pull/375",
+      badge: "Merged PR #375",
+      language: "Java",
+      iconifyClass: "logos-java",
+      description:
+        "Enhanced identifier parsing in Schibsted's JSLT JSON query and transformation engine to support Unicode characters (#373).",
+    },
+    {
+      id: "upstream-jslt-intellij",
+      repo: "fuchsst/jslt-intellij-plugin",
+      url: "https://github.com/fuchsst/jslt-intellij-plugin/pull/17",
+      badge: "2 Merged PRs",
+      language: "Java",
+      iconifyClass: "logos-java",
+      description:
+        "Added JSLT plugin validations, code completion, and Gradle/IntelliJ compatibility updates for modern IDE releases.",
+    },
+    {
+      id: "upstream-jellyfin-tmdblib",
+      repo: "jellyfin/TMDbLib",
+      url: "https://github.com/jellyfin/TMDbLib/pull/507",
+      badge: "3 Merged PRs",
+      language: "C#",
+      iconifyClass: "logos-c-sharp",
+      description:
+        "Added Collection media type support in SearchMultiAsync, TV show video language filtering, and SearchCollection properties.",
+    },
+    {
+      id: "upstream-sharpcompress",
+      repo: "adamhathcock/sharpcompress",
+      url: "https://github.com/adamhathcock/sharpcompress/pull/859",
+      badge: "Merged PR #859",
+      language: "C#",
+      iconifyClass: "logos-c-sharp",
+      description:
+        "Sanitized invalid filename characters during archive extraction (#858) to improve cross-platform reliability.",
+    },
+    {
+      id: "upstream-fastforward",
+      repo: "FastForwardTeam/FastForward",
+      url:
+        "https://github.com/FastForwardTeam/FastForward/pulls?q=is%3Apr+author%3ADineshSolanki",
+      badge: "6 Merged PRs",
+      language: "JavaScript",
+      iconifyClass: "logos-javascript",
+      description:
+        "Contributed URL bypass rules and maintenance improvements across six merged pull requests.",
+    },
+  ],
 };
 
 const publicationsHeader = {
@@ -754,6 +1064,10 @@ export {
   awards,
   experience,
   projectsHeader,
+  corporateProjectsHeader,
+  corporateProjects,
+  openSourceProjectsHeader,
+  openSourceProjects,
   publicationsHeader,
   publications,
   contactPageData,
