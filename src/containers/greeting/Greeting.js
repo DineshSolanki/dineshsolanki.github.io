@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
@@ -8,8 +9,30 @@ import FeelingProud from "./FeelingProud";
 
 export default function Greeting(props) {
   const theme = props.theme;
+  const [copied, setCopied] = useState(false);
+  const copyTimerRef = useRef(null);
+
+  useEffect(() => {
+    return () => {
+      if (copyTimerRef.current) {
+        clearTimeout(copyTimerRef.current);
+      }
+    };
+  }, []);
+
+  const handleCopyEmail = () => {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(greeting.email).catch(() => {});
+    }
+    setCopied(true);
+    if (copyTimerRef.current) {
+      clearTimeout(copyTimerRef.current);
+    }
+    copyTimerRef.current = setTimeout(() => setCopied(false), 2200);
+  };
+
   return (
-    <Fade bottom duration={1000} distance="40px">
+    <Fade bottom duration={550} distance="24px">
       <div className="greet-main" id="greeting">
         <div className="greeting-main">
           <div className="greeting-text-div">
@@ -70,11 +93,30 @@ export default function Greeting(props) {
                   href={greeting.resumeLink}
                   theme={theme}
                 />
-                <Button
-                  text="Email Me"
-                  href={`mailto:${greeting.email}`}
-                  theme={theme}
-                />
+                <Link
+                  to="/projects"
+                  className="greeting-secondary-cta"
+                  style={{
+                    color: theme.text,
+                    borderColor: theme.text,
+                    backgroundColor: "transparent",
+                  }}
+                >
+                  View Production Projects →
+                </Link>
+                <button
+                  type="button"
+                  onClick={handleCopyEmail}
+                  className="greeting-copy-email-btn"
+                  style={{
+                    color: theme.text,
+                    borderColor: theme.highlight,
+                    backgroundColor: `${theme.highlight}55`,
+                  }}
+                  aria-label={`Copy email address ${greeting.email}`}
+                >
+                  {copied ? "Email Copied ✓" : `Copy ${greeting.email}`}
+                </button>
               </div>
             </div>
           </div>

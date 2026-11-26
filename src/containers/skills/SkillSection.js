@@ -44,21 +44,21 @@ class SkillSection extends Component {
               }
             >
               {skillSvg && (
-                <Fade left duration={1000}>
+                <Fade left duration={550}>
                   <div className="skills-image-div">{skillSvg}</div>
                 </Fade>
               )}
 
               <div className="skills-text-div">
-                <Fade right duration={1000}>
+                <Fade right duration={550}>
                   <h1 className="skills-heading" style={{ color: theme.text }}>
                     {skill.title}
                   </h1>
                 </Fade>
-                <Fade right duration={1500}>
+                <Fade right duration={600}>
                   <SoftwareSkill logos={skill.softwareSkills} />
                 </Fade>
-                <Fade right duration={1500}>
+                <Fade right duration={600}>
                   <div>
                     {skill.skills.map((skillSentence) => {
                       return (
@@ -71,6 +71,42 @@ class SkillSection extends Component {
                         </p>
                       );
                     })}
+                    {skill.skillGroups && skill.skillGroups.length > 0 && (
+                      <div className="skills-groups-grid">
+                        {skill.skillGroups.map((group) => (
+                          <div
+                            key={group.category}
+                            className="skills-group-card"
+                            style={{
+                              borderColor: theme.highlight,
+                              backgroundColor: `${theme.highlight}33`,
+                            }}
+                          >
+                            <h3
+                              className="skills-group-title"
+                              style={{ color: theme.text }}
+                            >
+                              {group.category}
+                            </h3>
+                            <div className="skills-group-chips">
+                              {group.items.map((item) => (
+                                <span
+                                  key={item}
+                                  className="skills-group-chip"
+                                  style={{
+                                    color: theme.text,
+                                    backgroundColor: theme.body,
+                                    borderColor: theme.highlight,
+                                  }}
+                                >
+                                  {item}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </Fade>
               </div>

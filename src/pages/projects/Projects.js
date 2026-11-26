@@ -40,7 +40,7 @@ class Projects extends Component {
       <div className="projects-main">
         <Header theme={theme} />
         <div className="basic-projects">
-          <Fade bottom duration={1500} distance="40px">
+          <Fade bottom duration={550} distance="24px">
             <div className="projects-heading-div">
               <div className="projects-heading-img-div">
                 <ProjectsImg theme={theme} />
@@ -108,7 +108,7 @@ class Projects extends Component {
             aria-labelledby="corporate-projects-heading"
           >
             <div className="basic-projects">
-              <Fade bottom duration={1200} distance="30px">
+              <Fade bottom duration={550} distance="20px">
                 <div className="section-heading-div">
                   <h2
                     id="corporate-projects-heading"
@@ -145,7 +145,7 @@ class Projects extends Component {
           aria-labelledby="open-source-projects-heading"
         >
           <div className="basic-projects">
-            <Fade bottom duration={1200} distance="30px">
+            <Fade bottom duration={550} distance="20px">
               <div className="section-heading-div">
                 <h2
                   id="open-source-projects-heading"
@@ -178,7 +178,7 @@ class Projects extends Component {
           {openSourceProjects.upstreamContributions &&
             openSourceProjects.upstreamContributions.length > 0 && (
               <div className="upstream-contributions-wrap">
-                <Fade bottom duration={1200} distance="30px">
+                <Fade bottom duration={550} distance="20px">
                   <div className="upstream-heading-div">
                     <h3
                       className="upstream-heading-text"
@@ -237,7 +237,7 @@ class Projects extends Component {
             aria-labelledby="publications-heading"
           >
             <div className="basic-projects">
-              <Fade bottom duration={1200} distance="30px">
+              <Fade bottom duration={550} distance="20px">
                 <div className="publications-heading-div">
                   <div className="publications-heading-text-div">
                     <h2

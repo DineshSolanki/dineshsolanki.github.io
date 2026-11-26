@@ -42,6 +42,41 @@
   line-height: normal;
 }
 
+.skills-groups-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.skills-group-card {
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  text-align: left;
+}
+
+.skills-group-title {
+  font-family: "Google Sans Medium";
+  font-size: 15px;
+  margin: 0 0 10px 0;
+}
+
+.skills-group-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills-group-chip {
+  font-family: "Google Sans Medium";
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  line-height: 1.4;
+}
+
 /* Media Query */
 @media (max-width: 1380px) {
   .skills-heading {

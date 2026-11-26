@@ -4,7 +4,7 @@ import { Fade } from "react-reveal";
 
 export default function UpstreamContributionCard({ contribution, theme }) {
   return (
-    <Fade bottom duration={1200} distance="25px">
+    <Fade bottom duration={550} distance="20px">
       <a
         className="upstream-card-link"
         href={contribution.url}

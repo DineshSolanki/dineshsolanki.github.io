@@ -9,7 +9,7 @@ export default function GithubRepoCard({ repo, category, theme }) {
 
   return (
     <div className="repo-card-div" style={{ backgroundColor: theme.highlight }}>
-      <Fade bottom duration={1200} distance="30px">
+      <Fade bottom duration={550} distance="20px">
         <a
           className="repo-card-link"
           href={repo.url}

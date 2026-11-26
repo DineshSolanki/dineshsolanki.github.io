@@ -9,7 +9,7 @@ class DegreeCard extends Component {
     return (
       <div className="degree-card">
         {degree.logo_path && (
-          <Flip left duration={2000}>
+          <Flip left duration={550}>
             <div className="card-img">
               <img
                 style={{
@@ -23,7 +23,7 @@ class DegreeCard extends Component {
             </div>
           </Flip>
         )}
-        <Fade right duration={2000} distance="40px">
+        <Fade right duration={550} distance="24px">
           <div
             className="card-body"
             style={{ width: degree.logo_path ? "90%" : "100%" }}
@@ -49,7 +49,11 @@ class DegreeCard extends Component {
             <div className="body-content">
               {degree.descriptions.map((sentence) => {
                 return (
-                  <p className="content-list" style={{ color: theme.text }}>
+                  <p
+                    key={sentence}
+                    className="content-list"
+                    style={{ color: theme.text }}
+                  >
                     {sentence}
                   </p>
                 );

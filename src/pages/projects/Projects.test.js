@@ -24,6 +24,12 @@ it("renders Corporate Projects, Open Source Projects, and Publications sections"
   expect(text).toContain("Digital Mailroom (DMR)");
   expect(text).toContain("FoliCon");
   expect(text).toContain("keycloak/keycloak");
+  expect(text).toContain("Architecture & Engineering Depth");
+  expect(text).toContain("Read article");
+  expect(text).toContain("Multi-Tenancy");
+
+  const pubLinks = div.querySelectorAll("a.publication-card-div");
+  expect(pubLinks.length).toBeGreaterThan(0);
 
   ReactDOM.unmountComponentAtNode(div);
 });

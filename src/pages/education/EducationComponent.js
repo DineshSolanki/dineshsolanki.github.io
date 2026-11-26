@@ -18,7 +18,7 @@ class Education extends Component {
       <div className="education-main">
         <Header theme={this.props.theme} />
         <div className="basic-education">
-          <Fade bottom duration={2000} distance="40px">
+          <Fade bottom duration={550} distance="24px">
             <div className="heading-div">
               <div className="heading-img-div">
                 {/* <img
@@ -35,9 +35,7 @@ class Education extends Component {
                   Qualifications, Awards and Recognition
                 </h3>
                 {competitiveSites.competitiveSites.length > 0 ? (
-                  <CompetitiveSites
-                    logos={competitiveSites.competitiveSites}
-                  />
+                  <CompetitiveSites logos={competitiveSites.competitiveSites} />
                 ) : null}
               </div>
             </div>

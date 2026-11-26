@@ -12,7 +12,7 @@ export default function CorporateProjectCard({ project, theme }) {
   const primaryUrl = project.product_url || project.company_url;
 
   return (
-    <Fade bottom duration={1200} distance="30px">
+    <Fade bottom duration={550} distance="20px">
       <article
         className="corporate-card"
         style={{
@@ -139,6 +139,31 @@ export default function CorporateProjectCard({ project, theme }) {
               <li key={item}>{item}</li>
             ))}
           </ul>
+        )}
+
+        {project.architectureNotes && project.architectureNotes.length > 0 && (
+          <details
+            className="corporate-arch-details"
+            style={{
+              borderColor: theme.highlight,
+              backgroundColor: `${theme.highlight}26`,
+            }}
+          >
+            <summary
+              className="corporate-arch-summary"
+              style={{ color: theme.text }}
+            >
+              Architecture &amp; Engineering Depth
+            </summary>
+            <ul
+              className="corporate-arch-list"
+              style={{ color: theme.secondaryText }}
+            >
+              {project.architectureNotes.map((note) => (
+                <li key={note}>{note}</li>
+              ))}
+            </ul>
+          </details>
         )}
 
         <div className="corporate-card-footer">

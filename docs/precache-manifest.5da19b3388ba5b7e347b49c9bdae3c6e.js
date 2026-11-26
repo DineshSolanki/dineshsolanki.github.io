@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e2066bb9a3d924d2e23deccca7354055",
+    "revision": "4f7dde9f9c07546f2911992eb5ddbfae",
     "url": "/index.html"
   },
   {
-    "revision": "2b186ea3dc8ed926431f",
-    "url": "/static/css/main.ebff385e.chunk.css"
+    "revision": "a4ce33414df72569e39b",
+    "url": "/static/css/main.2c42d738.chunk.css"
   },
   {
-    "revision": "c51a5d531b6e466c47b3",
-    "url": "/static/js/2.914a8c0e.chunk.js"
+    "revision": "1dea4c69665eca874fc8",
+    "url": "/static/js/2.c8f51cbe.chunk.js"
   },
   {
-    "revision": "2b186ea3dc8ed926431f",
-    "url": "/static/js/main.0316793a.chunk.js"
+    "revision": "a4ce33414df72569e39b",
+    "url": "/static/js/main.f3575c49.chunk.js"
   },
   {
     "revision": "f4163cc1361175add5e6",
@@ -80,6 +80,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/contactMail.5f915405.png"
   },
   {
+    "revision": "9f2fc9302af38e0b07cc499b7e75e83b",
+    "url": "/static/media/coursera-wordmark.9f2fc930.svg"
+  },
+  {
     "revision": "ebf35d7f33ebbd4a4c6cff7e66e21fdb",
     "url": "/static/media/data_science.ebf35d7f.svg"
   },
@@ -100,12 +104,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/drysign-logo.b11fcc33.png"
   },
   {
-    "revision": "954317a4906c51bb8316e6f88cc38eea",
-    "url": "/static/media/drysign-with-symbol.954317a4.webp"
-  },
-  {
     "revision": "63f707f224c8a842ac928c36e3be879a",
     "url": "/static/media/dsc_logo.63f707f2.png"
+  },
+  {
+    "revision": "68f18a0a2e87191bc547c5a4cef648fb",
+    "url": "/static/media/duke-logo.68f18a0a.svg"
   },
   {
     "revision": "3bab7a9dc4324f1b2364d25a47fcfcf0",
@@ -208,6 +212,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/googleAssistant.a6addc3f.svg"
   },
   {
+    "revision": "fdfbf4816b4315a65c05ea5eb30641a9",
+    "url": "/static/media/hbi-logo.fdfbf481.png"
+  },
+  {
     "revision": "d3fccbe1db76b96f4f320d9c0f7da30c",
     "url": "/static/media/ibm_logo.d3fccbe1.png"
   },
@@ -244,6 +252,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/mbmu-logo.7fcd91ff.png"
   },
   {
+    "revision": "25bd805ffbd0a06888275f123015c4ad",
+    "url": "/static/media/mongodb-logo.25bd805f.svg"
+  },
+  {
     "revision": "069938a84edd6ebf383c318e9feb5d4c",
     "url": "/static/media/muffito_logo.069938a8.png"
   },
@@ -254,6 +266,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "95a12a2b8c3149cce2175679755c4b4d",
     "url": "/static/media/nptel_logo.95a12a2b.png"
+  },
+  {
+    "revision": "171300c5729b5fc5d2226179ee6c1a3c",
+    "url": "/static/media/packt-logo.171300c5.png"
   },
   {
     "revision": "414dfbd98516b39255a3e22ed90b3f7d",
@@ -296,7 +312,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/tiktok_logo.0993e324.png"
   },
   {
+    "revision": "c07d1ee66b494f65059d8dc8e795d269",
+    "url": "/static/media/ucdavis-logo.c07d1ee6.svg"
+  },
+  {
+    "revision": "e17e3d09818324c238e8be8143b1b3db",
+    "url": "/static/media/udemy-logo.e17e3d09.svg"
+  },
+  {
     "revision": "d63630893eb8cb64af65f395d393c481",
     "url": "/static/media/ui_ux_design.d6363089.svg"
+  },
+  {
+    "revision": "aef11318f89d62716c3b8fa2a1d0ea27",
+    "url": "/static/media/vanderbilt-logo.aef11318.png"
   }
 ]);

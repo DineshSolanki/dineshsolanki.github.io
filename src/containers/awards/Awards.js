@@ -9,7 +9,7 @@ class Awards extends Component {
     return (
       <div className="main" id="awards">
         <div className="awards-header-div">
-          <Fade bottom duration={1000} distance="20px">
+          <Fade bottom duration={550} distance="20px">
             <h1 className="awards-header" style={{ color: theme.text }}>
               {awards.title}
             </h1>
@@ -28,7 +28,10 @@ class Awards extends Component {
                   alt={award.alt_name}
                 />
                 <div className="award-card-text">
-                  <h2 className="award-card-title" style={{ color: theme.text }}>
+                  <h2
+                    className="award-card-title"
+                    style={{ color: theme.text }}
+                  >
                     {award.title}
                   </h2>
                   <h3
@@ -43,7 +46,7 @@ class Awards extends Component {
             return (
               <Fade
                 bottom
-                duration={1000}
+                duration={550}
                 distance="20px"
                 key={award.title + award.subtitle}
               >

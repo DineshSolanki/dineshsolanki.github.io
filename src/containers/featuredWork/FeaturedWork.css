@@ -1,0 +1,223 @@
+.featured-work-section {
+  width: 90%;
+  margin: 2.5rem auto 1rem auto;
+  padding: 10px 10px 20px 10px;
+}
+
+.featured-work-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.featured-work-title {
+  font-family: "Google Sans Medium";
+  font-size: 36px;
+  line-height: 1.2;
+  margin: 0 0 6px 0;
+}
+
+.featured-work-subtitle {
+  font-family: "Google Sans Regular";
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 680px;
+}
+
+.featured-work-all-link {
+  font-family: "Google Sans Medium";
+  font-size: 14px;
+  padding: 9px 16px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.featured-work-all-link:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+  text-decoration: none;
+}
+
+.featured-work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.featured-work-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1.35rem;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  border-top-width: 4px;
+  box-shadow: 0 10px 24px -14px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.featured-work-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 30px -14px rgba(0, 0, 0, 0.26);
+}
+
+.featured-work-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.featured-work-logo-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 3px 10px -4px rgba(0, 0, 0, 0.2);
+}
+
+.featured-work-logo-wrap--wide {
+  width: auto;
+  max-width: 132px;
+  height: 36px;
+  padding: 5px 10px;
+}
+
+.featured-work-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.featured-work-metric {
+  font-family: "Google Sans Medium";
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  line-height: 1.35;
+  text-align: right;
+}
+
+.featured-work-card-title {
+  font-family: "Google Sans Medium";
+  font-size: 18px;
+  line-height: 1.35;
+  margin: 0 0 6px 0;
+}
+
+.featured-work-card-meta {
+  font-family: "Google Sans Regular";
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 0 0 10px 0;
+}
+
+.featured-work-card-summary {
+  font-family: "Google Sans Regular";
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 14px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.featured-work-card-actions {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 6px;
+}
+
+.featured-work-card-link {
+  font-family: "Google Sans Medium";
+  font-size: 13.5px;
+  text-decoration: none;
+}
+
+.featured-work-card-link:hover {
+  text-decoration: underline;
+}
+
+.featured-awards-bar {
+  margin-top: 20px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+}
+
+.featured-awards-label {
+  font-family: "Google Sans Medium";
+  font-size: 14px;
+}
+
+.featured-awards-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex: 1;
+}
+
+.featured-award-pill {
+  font-family: "Google Sans Regular";
+  font-size: 13px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  line-height: 1.35;
+}
+
+a.featured-award-pill:hover {
+  text-decoration: underline;
+}
+
+.featured-awards-exp-link {
+  font-family: "Google Sans Medium";
+  font-size: 14px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.featured-awards-exp-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+  .featured-work-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-work-section {
+    margin-top: 1.25rem;
+  }
+
+  .featured-work-title {
+    font-size: 26px;
+  }
+
+  .featured-work-subtitle {
+    font-size: 15px;
+  }
+}

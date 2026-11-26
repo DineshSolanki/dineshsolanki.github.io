@@ -20,14 +20,28 @@
 
 .header li a {
   display: block;
-  padding: 20px 20px;
-  /* color: black; */
+  padding: 12px 16px;
+  border-radius: 8px;
   text-decoration: none;
+  transition: background-color 0.15s ease, opacity 0.15s ease;
 }
 
-.header li a:hover,
-.header .menu-btn:hover {
-  /* background-color: #A6E1FA; */
+.header li.header-resume-item {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.header li a.header-resume-cta {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-family: "Google Sans Medium";
+  font-weight: 600;
+}
+
+.header li a.header-resume-cta:hover {
+  opacity: 0.88;
 }
 
 .header .logo {
@@ -42,7 +56,6 @@
   font-family: "Agustina Regular";
   font-weight: bold;
   padding: 0 10px;
-  /* color: #55198b; */
 }
 
 /* menu */
@@ -69,7 +82,7 @@
 }
 
 .header .menu-icon .navicon {
-  background: #333;
+  background: currentColor;
   display: block;
   height: 2px;
   position: relative;
@@ -79,7 +92,7 @@
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #333;
+  background: currentColor;
   content: "";
   display: block;
   height: 100%;
@@ -103,7 +116,7 @@
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 370px;
+  max-height: 400px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -123,6 +136,17 @@
   top: 0;
 }
 
+@media (max-width: 767px) {
+  .header li.header-resume-item {
+    margin: 8px 16px 14px 16px;
+  }
+
+  .header li a.header-resume-cta {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /* 48em = 768px */
 
 @media (min-width: 48em) {
@@ -136,6 +160,9 @@
   }
   .header .menu {
     max-height: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
   }
   .header .menu-icon {
     display: none;

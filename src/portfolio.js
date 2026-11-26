@@ -5,12 +5,27 @@ const settings = {
   isSplash: false, // Change this to false if you don't want Splash screen.
 };
 
+function getYearsExperienceLabel(careerStartDate) {
+  const start = new Date(careerStartDate);
+  const now = new Date();
+  let years = now.getFullYear() - start.getFullYear();
+  if (
+    now.getMonth() < start.getMonth() ||
+    (now.getMonth() === start.getMonth() && now.getDate() < start.getDate())
+  ) {
+    years--;
+  }
+  return `${Math.max(1, years)}+ years`;
+}
+
+const experienceYears = getYearsExperienceLabel("2021-11-01");
+
 //SEO Related settings
 const seo = {
   title: "Dinesh Solanki — Senior Backend Engineer (Java, Spring Boot)",
   description:
-    "Senior Backend Engineer with ~5 years building and owning secure, scalable backend systems in Java, Spring Boot and cloud-native microservices. " +
-    "Specialized in API security and identity — Keycloak, OAuth2, JWT and ISTIO — across compliance-heavy enterprise platforms.",
+    `Remote-first Senior Backend Engineer with ${experienceYears} autonomously building and owning secure, scalable backend systems in Java, Spring Boot, and cloud-native microservices across US, EU, APAC, and India time zones. ` +
+    "Specialized in API security and identity (Keycloak, OAuth2, JWT, ISTIO) across global banking, pharma traceability, digital signatures, and identity verification.",
   og: {
     title: "Dinesh Solanki — Senior Backend Engineer",
     type: "website",
@@ -23,14 +38,16 @@ const greeting = {
   title: "Dinesh Solanki",
   logo_name: "DineshSolanki",
   role: "Senior Backend Engineer",
-  roleStack: "Java · Spring Boot · Cloud-Native Microservices",
-  currentPosition: "Senior Technical Consultant @ EY",
+  roleStack:
+    "Java · Spring Boot · Remote-First Backend Systems · AI-Assisted Engineering",
+  currentPosition:
+    "Senior Technical Consultant @ EY · Remote-First · Exploring Senior IC Backend Roles",
   email: "solankid297@gmail.com",
   subTitle:
-    "~5 years building and owning secure, scalable backend systems for compliance-heavy enterprise platforms — digital signatures, remote notarization, identity verification and workflow automation. " +
-    "I specialize in API security and identity with Keycloak, OAuth2, JWT and ISTIO.",
+    `${experienceYears} autonomously owning and shipping secure, scalable backend systems across global banking, pharma traceability, digital signatures, remote notarization, and workflow automation. ` +
+    "Remote-first engineer trusted across US, EU, APAC, and India time zones — combining async written communication, disciplined time management, and strict SLA ownership from design docs through UAT and release.",
   resumeLink:
-    "https://drive.google.com/file/d/1tNeM4Lq9leQob1oQnWNXw60sEvFiuuIf/view?usp=sharing",
+    "https://drive.google.com/file/d/1el3n3F8yZCTgQvOYHpM9WOoZl2Q5UMV5/view?usp=sharing",
   portfolio_repository: "https://github.com/DineshSolanki/DineshSolanki",
   githubProfile: "https://github.com/DineshSolanki",
 };
@@ -46,8 +63,8 @@ const impactStats = [
     label: "OWASP security score raised; PCI compliance achieved",
   },
   {
-    value: "4 regions",
-    label: "Delivered with teams across Philippines, US, EU & India",
+    value: "Remote · 4 Zones",
+    label: "Async delivery & 100% sprint stability across US, EU, India & APAC",
   },
 ];
 
@@ -90,7 +107,7 @@ const skills = {
       title: "Backend & Microservices",
       fileName: "DataScienceImg",
       skills: [
-        "⚡ Owning backend modules end-to-end — from design and implementation through UAT stabilization and release",
+        "⚡ Self-directed, end-to-end backend ownership — driving modules from written design docs and async RFCs through UAT stabilization and release",
         "⚡ Building cloud-native microservices with Java and Spring Boot for enterprise supply-chain, healthcare and document platforms",
         "⚡ Designing RESTful APIs and resolving large-payload and throughput bottlenecks, including MongoDB document limits",
       ],
@@ -276,17 +293,99 @@ const skills = {
       ],
     },
     {
-      // Flat keyword block: scannable for recruiters and ATS keyword matching.
-      // No illustration -- renders full width.
+      // Flat keyword block: scannable grouped chips for recruiters and ATS matching.
       title: "Technical Skills",
-      skills: [
-        "⚡ Languages & Frameworks: Java, Spring Boot, Angular, Maven, Gradle, Spring Shell, JSLT, XSLT",
-        "⚡ Security: Spring Security, Keycloak, OWASP, PCI Compliance, SAST/DAST, Veracode, Blackduck, Coverity",
-        "⚡ Cloud & DevOps: Azure, AWS, Docker, Kubernetes, Jenkins, Git, Azure DevOps, Tuleap",
-        "⚡ Standards & Protocols: GS1, EPCIS, DSCSA, REST APIs, OpenAPI",
-        "⚡ Databases & Tools: SQL, MongoDB, Subversion, Jira, IntelliJ, VSCode, Eclipse, Visual Studio",
-        "⚡ Others: CI, Code Review, Microservices, Authentication & Authorization, Secure Coding Practices",
-        "⚡ Languages: English (Full Professional), Spanish (Elementary), Hindi (Native or Bilingual)",
+      skills: [],
+      skillGroups: [
+        {
+          category: "Languages & Frameworks",
+          items: [
+            "Java",
+            "Spring Boot",
+            "Angular",
+            "Maven",
+            "Gradle",
+            "Spring Shell",
+            "JSLT",
+            "XSLT",
+          ],
+        },
+        {
+          category: "Security & IAM",
+          items: [
+            "Spring Security",
+            "Keycloak",
+            "OAuth2",
+            "JWT",
+            "ISTIO",
+            "OWASP",
+            "PCI Compliance",
+            "Veracode",
+            "Blackduck",
+            "Coverity",
+          ],
+        },
+        {
+          category: "Cloud & DevOps",
+          items: [
+            "Azure",
+            "AWS",
+            "GCP",
+            "Docker",
+            "Kubernetes",
+            "Jenkins",
+            "Git",
+            "Azure DevOps",
+            "Tuleap",
+            "CI/CD",
+          ],
+        },
+        {
+          category: "Standards & Data",
+          items: [
+            "GS1",
+            "EPCIS",
+            "DSCSA",
+            "REST APIs",
+            "OpenAPI",
+            "SQL",
+            "MongoDB",
+            "MongoDB Aggregation",
+          ],
+        },
+        {
+          category: "AI-Assisted & Agentic Tooling",
+          items: [
+            "GitHub Copilot",
+            "AutoGen (Multi-Agent)",
+            "Power Automate",
+            "AI-Assisted Development",
+            "Agentic Workflows",
+            "Microsoft 365 Copilot",
+          ],
+        },
+        {
+          category: "Remote-First & Async Execution",
+          items: [
+            "Autonomous Delivery",
+            "Async Written Communication",
+            "Time-Zone Overlap (US / EU / APAC)",
+            "Self-Managed Time & SLAs",
+            "Design Docs & Async Handoffs",
+            "100% Sprint Predictability",
+          ],
+        },
+        {
+          category: "Engineering Practices & Languages",
+          items: [
+            "Microservices",
+            "Secure Coding",
+            "Code Review",
+            "English (Full Professional · EF SET C2)",
+            "Hindi (Native)",
+            "Spanish (Elementary)",
+          ],
+        },
       ],
       softwareSkills: [],
     },
@@ -351,26 +450,28 @@ const degrees = {
   degrees: [
     {
       title: "MBM Engineering College (Now MBM University)",
-      subtitle: "Master of Computer Applications",
+      subtitle:
+        "Master of Computer Applications (MCA) · Computer Programming & Specific Applications",
       logo_path: "mbmu-logo.png",
       alt_name: "MBM University",
       duration: "2018 - 2021",
       descriptions: [
-        "⚡ I have studied core software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
-        "⚡ GPA - 8.7",
+        "⚡ Studied core software engineering subjects including Data Structures, Algorithms, DBMS, Operating Systems, Computer Architecture, and AI.",
+        "⚡ GPA: 8.7",
         "⚡ Coding club mentor; contributed to online tests development and college events.",
       ],
       website_link: "https://www.mbm.ac.in",
     },
     {
       title: "Lachoo Memorial College of Science & Technology",
-      subtitle: "Bachelor of Computer Applications",
+      subtitle:
+        "Bachelor of Computer Applications (BCA) · Computer Science, Technology & Programming",
       logo_path: "lmcst-logo.png",
       alt_name: "Lachoo Memorial College of Science & Technology",
       duration: "2015 - 2018",
       descriptions: [
-        "⚡ GPA - 7.1",
-        "⚡ TPO cell volunteer and active in college activities.",
+        "⚡ GPA: 7.1",
+        "⚡ TPO cell volunteer and active contributor in college technical activities.",
       ],
       website_link: "https://www.lachoomemorial.org",
     },
@@ -380,12 +481,125 @@ const degrees = {
 const certifications = {
   certifications: [
     {
+      title: "Mastering Multi-Agent Development with AutoGen",
+      subtitle: "Packt · Coursera",
+      issued: "Nov 2026",
+      credentialId: "UE6JCVXP1905",
+      logo_path: "packt-logo.png",
+      certificate_link:
+        "https://www.coursera.org/account/accomplishments/verify/UE6JCVXP1905",
+      alt_name: "Packt",
+      color_code: "#FFFFFF",
+    },
+    {
+      title: "AI Agent Skills for Leaders",
+      subtitle: "Vanderbilt University · Coursera",
+      issued: "Nov 2026",
+      credentialId: "2XZTYWSDU4AP",
+      logo_path: "vanderbilt-logo.png",
+      certificate_link:
+        "https://www.coursera.org/account/accomplishments/verify/2XZTYWSDU4AP",
+      alt_name: "Vanderbilt University",
+      color_code: "#FFFFFF",
+    },
+    {
+      title: "Build and Evaluate Robust Financial Models",
+      subtitle: "Coursera",
+      issued: "Nov 2026",
+      credentialId: "K0MR7YU41JIA",
+      logo_path: "coursera-wordmark.svg",
+      certificate_link:
+        "https://www.coursera.org/account/accomplishments/verify/K0MR7YU41JIA",
+      alt_name: "Coursera",
+      color_code: "#FFFFFF",
+    },
+    {
+      title: "Risk Management and Financial Theory",
+      subtitle: "Duke University · Coursera",
+      issued: "Nov 2026",
+      credentialId: "SNVHK31DD7LH",
+      logo_path: "duke-logo.svg",
+      certificate_link:
+        "https://www.coursera.org/account/accomplishments/verify/SNVHK31DD7LH",
+      alt_name: "Duke University",
+      color_code: "#FFFFFF",
+    },
+    {
+      title: "AI Agents: From Prompts to Multi-Agent Systems",
+      subtitle: "University of California, Davis · Coursera",
+      issued: "May 2026",
+      credentialId: "K612F2NLGJUP",
+      logo_path: "ucdavis-logo.svg",
+      certificate_link:
+        "https://www.coursera.org/account/accomplishments/verify/K612F2NLGJUP",
+      alt_name: "UC Davis",
+      color_code: "#022851",
+    },
+    {
+      title: "Agentic AI and AI Agents: A Primer for Leaders",
+      subtitle: "Vanderbilt University · Coursera",
+      issued: "May 2026",
+      credentialId: "8VYNJZGZJ41P",
+      logo_path: "vanderbilt-logo.png",
+      certificate_link:
+        "https://www.coursera.org/account/accomplishments/verify/8VYNJZGZJ41P",
+      alt_name: "Vanderbilt University",
+      color_code: "#FFFFFF",
+    },
+    {
+      title: "Service And Client Orientation",
+      subtitle: "Harvard Business Impact Enterprise",
+      issued: "May 2026",
+      logo_path: "hbi-logo.png",
+      certificate_link: "",
+      alt_name: "Harvard Business Impact Enterprise",
+      color_code: "#02766A",
+    },
+    {
+      title: "Financial Risk Management (FRM): Foundational FRM Principles",
+      subtitle: "Udemy",
+      issued: "May 2026",
+      logo_path: "udemy-logo.svg",
+      certificate_link: "",
+      alt_name: "Udemy",
+      color_code: "#FFFFFF",
+    },
+    {
+      title: "AI Usage and Data-Driven Thinking",
+      subtitle: "Harvard Business Impact Enterprise",
+      issued: "Apr 2026",
+      logo_path: "hbi-logo.png",
+      certificate_link: "",
+      alt_name: "Harvard Business Impact Enterprise",
+      color_code: "#02766A",
+    },
+    {
+      title: "Microsoft 365 Copilot: Personal Productivity for All",
+      subtitle: "Vanderbilt University · Coursera",
+      issued: "Apr 2026",
+      credentialId: "QOB71G22C8VH",
+      logo_path: "vanderbilt-logo.png",
+      certificate_link:
+        "https://www.coursera.org/account/accomplishments/verify/QOB71G22C8VH",
+      alt_name: "Vanderbilt University",
+      color_code: "#FFFFFF",
+    },
+    {
+      title: "MongoDB Aggregation Fundamentals",
+      subtitle: "MongoDB",
+      logo_path: "mongodb-logo.svg",
+      certificate_link:
+        "https://www.credly.com/badges/9c01f3a3-0ee5-4953-a02f-758cd83ca957",
+      alt_name: "MongoDB",
+      color_code: "#FFFFFF",
+    },
+    {
       title: "Foundational C#",
       subtitle: "Microsoft",
       logo_path: "microsoft_logo.png",
       certificate_link: "",
       alt_name: "Microsoft",
-      color_code: "#D83B01",
+      color_code: "#FFFFFF",
     },
     {
       title: "EF SET English Certificate - 77/100",
@@ -393,7 +607,7 @@ const certifications = {
       logo_path: "efset_logo.svg",
       certificate_link: "",
       alt_name: "EF SET",
-      color_code: "#0C9D58",
+      color_code: "#FFFFFF",
     },
   ],
 };
@@ -431,8 +645,8 @@ const experience = {
   title: "Experience",
   subtitle: "Work",
   description:
-    "~5 years building and owning backend systems in Java and Spring Boot, across document-centric and compliance-heavy enterprise platforms. " +
-    "I work deeply on backend engineering, system design and security-focused problem solving, and stay actively involved in open-source communities.",
+    `${experienceYears} building and owning backend systems in Java and Spring Boot across global banking, pharma serialization, digital signatures, identity verification, and workflow automation. ` +
+    "I thrive in remote-first, distributed environments — operating autonomously with crisp async written communication, disciplined time management, and end-to-end SLA ownership.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -447,8 +661,8 @@ const experience = {
           duration: "Mar 2026 - Present",
           location: "New Delhi, India",
           description: [
-            "Building Java microservices and cloud-native systems for enterprise clients.",
-            "Working across backend service design, security and identity (Keycloak, OAuth2) and DevOps practices.",
+            "Partnering with a global banking client on core Java backend microservices and secure coding initiatives.",
+            "Working autonomously across backend service design, identity and access controls (Keycloak, OAuth2), AI-assisted development, and DevOps practices.",
           ],
           color: "#2E2E38",
         },
@@ -467,16 +681,16 @@ const experience = {
           company_url: "https://www.ness.com/",
           logo_path: "ness-logo.png",
           duration: "Oct 2024 - Feb 2026",
-          location: "Pune, Maharashtra, India",
+          location: "Pune, India (Distributed · US / EU / APAC Teams)",
           description: [
-            "Owned backend services for enterprise supply-chain and healthcare systems (GS1 / EPCIS) using Java and Spring Boot.",
+            "Owned core delivery and serialization backend services for enterprise supply-chain and healthcare systems (Systech TraceIQ™ · GS1 / EPCIS) using Java and Spring Boot.",
             "Optimized high-volume serialization workflows (10k+ serials), cutting processing time from 2\u20133 hours to ~10 minutes.",
             "Diagnosed and resolved large-payload and performance issues, including MongoDB document size limits.",
             "Built microservices with JSON-heavy APIs and Keycloak-based IAM integrations; implemented access-control flows with ISTIO and OAuth2.",
             "Integrated SAST/DAST tooling (Blackduck, Coverity) and developed utilities to handle long-running tasks.",
-            "Stabilized UAT phases and improved release readiness \u2014 handled C1/C2 incidents under strict SLAs and held 100% Jira board stability since joining the sprint.",
-            "Collaborated across a multi-regional team spanning the Philippines, US, EU and India, working with QA, product and engineering to resolve critical defects.",
-            "Mentored interns, reviewed pull requests, influenced architecture decisions and delivered client demos \u2014 recognized with quarterly and spot awards (Innovation Catalyst).",
+            "Self-managed UAT stabilization and release readiness asynchronously — resolved C1/C2 incidents under strict SLAs and maintained 100% Jira sprint predictability.",
+            "Collaborated smoothly across Philippines, US, EU, and India time zones via concise written handoffs, status updates, and cross-team defect triage.",
+            "Mentored interns, reviewed pull requests, influenced architecture decisions and delivered client demos — recognized with quarterly and spot awards (Innovation Catalyst).",
           ],
           color: "#00195F",
         },
@@ -495,15 +709,15 @@ const experience = {
           company_url: "https://www.exelatech.com/",
           logo_path: "exela-logo.png",
           duration: "Jan 2022 - Aug 2024",
-          location: "Pune, Maharashtra, India (Remote)",
+          location: "Pune, Maharashtra, India (100% Remote · 2.5+ yrs)",
           description: [
-            "Java full-stack developer (backend-heavy) across Remote Notarization, DrySign, DMR and in-house products.",
+            "5+ years 100% remote Java full-stack (backend-heavy) ownership across Remote Notarization, DrySign, DMR and in-house products.",
             "Raised the application's security score from 25 to 100 against OWASP standards \u2014 a first for the product \u2014 and achieved PCI compliance.",
-            "Led a team of up to 6 developers through a critical refactoring and API security overhaul.",
+            "Remotely led up to 6 developers through a critical API security overhaul and version 2 restructuring via structured task breakdown, async coordination, and PR reviews.",
             "Integrated Keycloak for IAM and implemented Stripe payments.",
             "Developed new features that took DrySign and ERN to a milestone release, and restructured the existing product for a version 2.",
-            "Built replacements for legacy services, and documented and automated recurring processes.",
-            "Promoted clean, readable code through reviews and mentoring of new team members.",
+            "Replaced legacy services and eliminated team bottlenecks by authoring documentation and automating recurring operational workflows.",
+            "Promoted clean, maintainable code through thorough async code reviews and remote mentoring of onboarding engineers.",
           ],
           color: "#000000",
         },
@@ -642,25 +856,26 @@ const corporateProjects = {
   data: [
     {
       id: "ey-cloud-microservices",
-      title: "Enterprise Cloud-Native Microservices Platform",
+      title: "Global Banking Microservices & Secure Engineering",
       company: "EY",
       company_url: "https://www.ey.com/",
       logo_path: "ey-logo.png",
       role: "Senior Technical Consultant",
       duration: "Mar 2026 - Present",
-      domain: "Enterprise Cloud & Identity",
-      impact: "Cloud-Native Java · IAM",
+      domain: "Global Banking · Cloud & Secure Coding",
+      impact: "Global Bank · Java & Secure Coding",
       scopeLabel: "Enterprise",
       accentColor: "#2E2E38",
       summary:
-        "Designing and delivering Java and Spring Boot microservices for enterprise client engagements with integrated identity and DevOps workflows.",
+        "Partnering with a global banking client to build and harden Java and Spring Boot microservices with secure coding practices, centralized IAM, and CI/CD delivery.",
       highlights: [
-        "Architecting resilient RESTful backend services and cloud-native deployment pipelines.",
-        "Implementing centralized authentication and authorization using Keycloak and OAuth2.",
+        "Engineering core Java microservices and remediation workflows tailored to global banking security and compliance baselines.",
+        "Implementing centralized authentication and authorization using Keycloak and OAuth2 alongside AI-assisted development tooling.",
       ],
       techStack: [
         "Java",
         "Spring Boot",
+        "Secure Coding",
         "Keycloak",
         "OAuth2",
         "Microservices",
@@ -691,6 +906,10 @@ const corporateProjects = {
         "Owned core Java and Spring Boot microservices handling compliance-critical serialization and EPCIS workflows across US, EU, India, and Philippines teams.",
         "Optimized high-volume serialization pipelines (10k+ serials), cutting runtime from 2–3 hours to ~10 minutes and resolving MongoDB document size bottlenecks.",
         "Implemented Keycloak IAM, OAuth2, and ISTIO service-mesh access controls with Blackduck and Coverity SAST/DAST security scanning.",
+      ],
+      architectureNotes: [
+        "Partitioned oversized EPCIS serialization payloads to eliminate MongoDB document-size ceiling failures under 10k+ serial batches.",
+        "Paired multi-realm Keycloak OAuth2/JWT validation with ISTIO mesh policies and automated Blackduck/Coverity SAST/DAST gates.",
       ],
       techStack: [
         "Java",
@@ -726,6 +945,10 @@ const corporateProjects = {
         "Led up to 6 developers through critical API security refactoring and version 2 platform restructuring.",
         "Integrated Keycloak IAM and Stripe subscription billing while delivering core features for milestone releases.",
       ],
+      architectureNotes: [
+        "Rebuilt auth and API security boundaries around Spring Security + multi-realm Keycloak JWT validation while meeting PCI cardholder standards.",
+        "Separated legacy monolithic flows during v2 restructuring to isolate Stripe billing, document workflows, and third-party drive integrations.",
+      ],
       techStack: [
         "Java",
         "Spring Boot",
@@ -758,6 +981,9 @@ const corporateProjects = {
         "Delivered core Java and Spring Boot backend capabilities taking Exela RN from early product stages to a major milestone release.",
         "Supported notarized workflow integrations bridging ERN with DrySign e-signatures and Digital Mailroom onboarding (USPS Form 1583).",
         "Built REST APIs, scheduling and payment backend flows, and automated recurring operational processes.",
+      ],
+      architectureNotes: [
+        "Coordinated signatory, notary calendar, electronic journal, and audit vault lifecycles across DrySign and DMR onboarding flows.",
       ],
       techStack: [
         "Java",
@@ -792,6 +1018,9 @@ const corporateProjects = {
         "Engineered Java and Spring Boot replacements for legacy mailroom backend services to improve reliability and maintainability.",
         "Automated recurring document-processing and backend operational workflows across DMR and companion Exela services.",
         "Promoted maintainable codebases through structured peer code reviews and mentoring incoming team members.",
+      ],
+      architectureNotes: [
+        "Incrementally strangled legacy modules into Spring Boot services backed by SQL/MongoDB for document routing and process automation.",
       ],
       techStack: [
         "Java",
@@ -955,6 +1184,7 @@ const publications = {
       name:
         "Shields/Badges and your repositories, Beginners’ guide to GitHub Shields.",
       createdAt: "2020-10-18T00:00:00Z",
+      tags: ["Open Source", "GitHub", "Documentation"],
       description:
         "Badges, also known as shields, are a great way to quickly showcase information about your repository. They can be found on the top of my project FoliCon’s Readme. In this post, we’ll learn how to use them to make your Readme’s look more professional.",
       url:
@@ -965,6 +1195,7 @@ const publications = {
       name:
         "Create Self-Contained Executables: Java Programs to native executables with GraalVM",
       createdAt: "2024-05-24T00:00:00Z",
+      tags: ["Java", "GraalVM", "Maven"],
       description:
         "Are you tired of hearing native is better? Say hello to GraalVM! This powerhouse tool converts your Java program into a self-contained executable, ensuring a seamless experience for all. With simple steps like setting environment variables and using Maven, you'll be up and running in no time.",
       url:
@@ -974,6 +1205,7 @@ const publications = {
       id: "Single-Entity-with-mongo-JPA",
       name: "Using Single Entity with JPA and Mongo DB in spring-boot",
       createdAt: "2024-01-25T00:00:00Z",
+      tags: ["Spring Boot", "MongoDB", "JPA"],
       description:
         "When dealing with data split across SQL and NoSQL, it's tricky to handle a single entity. While not ideal, use a combination of JPA and starter-data-mongo, carefully managing dependencies and creating different profiles. With careful entity and repository design, it's possible to make them work. Remember to separate repositories and handle case-sensitive fields. This approach offers an effective way to handle the situation.",
       url:
@@ -984,6 +1216,7 @@ const publications = {
       name:
         "How to validate keycloak token when you have multiple realms(Multi-tenancy)",
       createdAt: "2023-09-17T00:00:00Z",
+      tags: ["Keycloak", "IAM / JWT", "Multi-Tenancy"],
       description:
         "Validating JWT tokens provided by Keycloak in a Spring Boot application with multiple realms can be challenging. This blog post will provide a step-by-step guide on how to implement a custom JWT decoder that can handle multiple realms.",
       url:
@@ -993,6 +1226,7 @@ const publications = {
       id: "java-logs-retrieval",
       name: "Programmatically Retrieving Log Files in Java Spring Boot",
       createdAt: "2023-11-20T00:00:00Z",
+      tags: ["Java", "Spring Boot", "Observability"],
       description:
         "In any Java application, having access to log files is crucial for debugging issues, monitoring app performance, and understanding usage patterns. In this post, we'll explore different techniques for programmatically retrieving log files in Java for administrative purposes or log analysis. Getting the Log File Location First, we need to determine where the log files",
       url:
@@ -1007,21 +1241,24 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "profile-image.png",
     description:
-      "You can reach out to me for any queries, job positions or collaboration. I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.",
+      "Open to remote-first Senior IC backend roles across distributed systems, Java/Spring Boot, and API security — reach out via email or LinkedIn for async or scheduled conversations.",
   },
   blogSection: {
-    title: "Blogs",
+    title: "Technical Writing",
     subtitle:
-      "I like to document some of my experiences in professional career journey as well as technical knowledge sharing.",
+      "Deep-dives on Java, Spring Boot, multi-tenant Keycloak JWT validation, GraalVM native binaries, and real-world backend lessons.",
     link: "https://aprogrammers.wordpress.com/",
     avatar_image_path: "blogs_image.svg",
   },
   addressSection: {
-    title: "Address",
-    subtitle: "Jodhpur, Rajasthan, India",
-    locality: "Rajasthan",
+    title: "Location & Remote Readiness",
+    subtitle:
+      "India (IST) · Remote-First Engineer — 5+ years 100% remote delivery and async multi-time-zone overlap across US, EU & APAC",
+    locality: "New Delhi",
     country: "INDIA",
-    region: "Rajasthan",
+    region: "Delhi NCR / Rajasthan",
+    location_map_link:
+      "https://www.google.com/maps/search/?api=1&query=New+Delhi,+India",
     avatar_image_path: "address_image.svg",
   },
   phoneSection: {

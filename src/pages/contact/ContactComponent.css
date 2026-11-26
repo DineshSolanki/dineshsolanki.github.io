@@ -112,6 +112,33 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.resume-btn-div .main-button {
+  margin-top: 0;
+}
+
+.contact-copy-email-btn {
+  font-family: "Google Sans Medium";
+  font-size: 16px;
+  line-height: 1.1;
+  padding: 13px 18px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.contact-copy-email-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
 }
 
 .blogsite-btn-div {

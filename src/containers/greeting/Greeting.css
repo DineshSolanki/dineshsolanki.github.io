@@ -27,8 +27,37 @@
 }
 .button-greeting-div {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
   margin-top: 20px;
+}
+
+.button-greeting-div .main-button {
+  margin-top: 0;
+}
+
+.greeting-secondary-cta,
+.greeting-copy-email-btn {
+  font-family: "Google Sans Medium";
+  font-size: 16px;
+  line-height: 1.1;
+  padding: 13px 18px;
+  border-radius: 6px;
+  border: 1px solid;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.greeting-secondary-cta:hover,
+.greeting-copy-email-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+  text-decoration: none;
 }
 
 .greeting-text {

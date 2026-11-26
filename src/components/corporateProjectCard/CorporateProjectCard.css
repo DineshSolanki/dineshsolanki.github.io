@@ -175,6 +175,32 @@
   margin-bottom: 6px;
 }
 
+.corporate-arch-details {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 1rem;
+}
+
+.corporate-arch-summary {
+  font-family: "Google Sans Medium";
+  font-size: 13.5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.corporate-arch-list {
+  margin: 8px 0 2px 0;
+  padding-left: 18px;
+  font-family: "Google Sans Regular";
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+.corporate-arch-list > li {
+  margin-bottom: 4px;
+}
+
 .corporate-card-footer {
   margin-top: auto;
   padding-top: 0.6rem;
